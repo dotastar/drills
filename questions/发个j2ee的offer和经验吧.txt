@@ -1,0 +1,62 @@
+发信人: lfranklin (Douzi), 信区: JobHunting
+ 标  题: 发个j2ee的offer和经验吧
+ 发信站: BBS 未名空间站 (Thu Jan 10 13:51:48 2013, 美东)
+
+ 转行做j2ee的，原来谭浩强的c那个水平。自己埋头看了很多书
+
+ Accelerated c++,programming abstraction in c++,C++ primer啊，effetive c++啊;
+ 算法类的大家说烂了的interview exposed， careercup 150，算法导论各种mitbbs上
+ 的题，后来因为家庭和签证等各种因素综合考虑，决定不搞算法搞j2ee了。
+
+ 大概一年多前开始0基础看java，主要原因之一是careercup上很多题都是java写的，不
+ 会java完全看不懂，后来基本看懂了。
+
+ 也是从斯坦福网上公开资料看起，
+ Introduction to Java Programming by Daniel Liang 写得很详细，所有例子基本都
+ 有完整代码，非常适合初学者。
+ Think in java 非常经典的书 必看 我到现在也就来回翻了前一半多的内容几遍。
+ SCJP 考级的书，内容非常细，打基础不错，但是有时候会觉得过细，回字四种写法。
+ head first design pattern 必看 单例工厂策略代理适配器
+
+ 数据库部分主要还是写写sql store procedure看oracle 文档搞定
+
+ j2ee部分基本是看视频教程+文档搞定的，书没翻几页
+ 这里推荐几个视频教程：verycd 马士兵+尚学堂张龙的教程，javabrains，mkyong网站
+ 之类的，youtube不少内容也不错，教程还比较新09年左右的。
+
+ 张龙讲得很细很深，内容涵盖很广，core java, webservice,xml,version control, 
+ junit,log4j,xml,jsp,servlet,jdbc,maven
+
+ 马士兵主要是struts2,hibernate,spring 这部分视频我重复看了三遍以上加上自己练
+ 习。
+
+ Spring MVC mkyong网站上有些教程，书就是Apress pro spring 太多了，跳着看而已。
+
+ 最后推荐一本神书，偶然发现，老印写的，虽然部分内容有点过时，但毫不妨碍这本书
+ 是本神书
+ Java/j2EE Job Interview Companion. 涵盖基本j2EE中级所有知识点，看来面试这个
+ 方面，老中和老印比还是有差距，这本书看了4遍以上。虽说这本书纯为面试而写，但
+ 是知道那些知识点有用针对性找资料还是能学到很多东西。
+
+ 最后说下面试：
+ 第一个onsite
+ 先发题计时做，基本都是选择题，core java+ javascript+数据库
+ javascript那些命令完全记不住，考得时候就觉得要挂了，心想就当攒经验了。没想到
+ 后面面谈的时候问对前台还是后台比较熟，我说后台，然后问得都是core java+后端问
+ 题，hibernate spring相关，数据库处理，设计模式及应用，dom，sax parser，
+ OR mapping，三种状态，如何update detached，Cache，性能优化，数据库备份问题没
+ 答上来，最后写了几个简单的sql，谈了一个多小时，聊得挺开心，答得挺顺利，最后
+ 说还有二面。今天早上接到hr的信，说给offer了，要background check. 
+
+ 给的title是senior.
+
+
+
+
+
+
+
+ --
+
+ ※ 修改:·lfranklin 於 Jan 10 14:16:33 2013 修改本文·[FROM: 69.]
+ ※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 69.]

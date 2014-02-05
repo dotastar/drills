@@ -1,0 +1,74 @@
+发信人: eastflag (Minifancy), 信区: JobHunting
+标  题: Amazon 最新Offer+面经(Update Package)
+发信站: BBS 未名空间站 (Wed Nov 20 12:40:42 2013, 美东)
+
+---------------Update Package 11/22/2013---------
+标准的Fresh MS Base 95k Package
+
+-------------------------------------------------
+刚刚收到Amazon的Offer消息，下周谈Offer细节.
+
+我是Fresh MS，被recruiter骚扰参加了Online Test,然后上周五去Seattle On-site的
+，四轮面试。
+
+第一轮是个中国大哥，资深SDE。
+一开始谈了下他的项目，问了下我的经历，最后半个小时给了道题。
+题目：Given Movies,Actors. Each movie includes some actors. How to find all 
+shortest paths between two given actors?
+e.g. 
+Movie: A, B, C
+Actor: a, b, c
+relation: A(a,b),B(b,c)
+from: a, To: c
+Ans: a-b-c
+
+这就是一道BFS问题，写完OK。他也很满意。
+
+第二轮也是个中国大哥，Bar Raiser, 资深Manager。
+简单介绍下他自己后开始问我问题，都是关于OOD的一些概念。
+然后让我设计一个在web页面上的画图程序，要求能够处理各种操作
+在这里感谢下这位大哥，我不怎么擅长OOD。。。都是在他不断提示下写完的。。。
+
+第三轮是个美国小伙，来了一年半。
+问了hash map查找，OOD四要素。
+然后一道subarray sum。
+最后是个brain teaser，
+Line1: 1
+Line2: 1 1
+Line3: 2 1
+Line4: 1 2 1 1
+Line5: 1 1 1 2 2 1
+Line6: ?
+这个题很trick，我在提示下做出来了
+
+第四个是个东欧或者俄罗斯的小伙，来了一年。
+问题：给定一个Stream interface,有hasNext(),getNext()方法，遍历元素顺序由小到
+大。
+现在写个Merge Class,要求输入n个Stream的实现（不知道具体实现，用interface)，
+完成该Merge class的hasNext(),getNext()方法。
+这道题就是用PriorityQueue，改写Comparable
+
+总结下，题目难度不大，除了OOD是我的弱项。两位国人大哥很Nice,东欧人也不错，就
+那个美国小伙。。。居然不知道bucket...
+
+感谢版上的面经。下面还有Google,Linkedin等面试，希望好消息吧。
+
+PS：求教个问题，Amazon的Offer一般有几周时间？
+
+
+
+
+
+
+
+
+
+--
+
+※ 修改:·eastflag 於 Nov 22 15:48:54 2013 修改本文·[FROM: 150.]
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 98.]
+
+
+
+
+

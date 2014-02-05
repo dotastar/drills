@@ -1,0 +1,68 @@
+发信人: hackie (hackie), 信区: JobHunting
+标  题: 写一段如何准备large-scale system design的面试吧
+发信站: BBS 未名空间站 (Sat May 26 20:39:09 2012, 美东)
+
+本人不是专家，只是写一些自己准备的notes抛砖引玉。
+
+首先，除非是面start-up，否则大公司里都已经有了现成的
+处理large-scale system的framework，不太可能要求你build
+everything from scratch。所以对于大部分码工面试来说
+只要知道large-scale system design的一些基本原则和
+common software packages就可以了。
+
+为了尽快上手，建议翻看以下几本书：
+Big Data Glossary
+Hadoop the definitive guide
+HBase the definitive guide
+
+里面具体编程和系统配置之类的章节完全可以略过不看。看完
+以后能解释一些重要的原则和关键词就可以了。例如：
+
+Divide and conquer
+MapReduce (Mapper & Reducer)
+Consistent hashing or extensible hashing
+sharding
+NoSQL vs SQL
+Gossip protocol
+C10K problem (http://www.kegel.com/c10k.html)
+distributed hash (memcached)
+
+然后再去看
+
+Facebook engineering Notes 
+http://www.facebook.com/Engineering/notes
+
+Instagram engineering blog
+http://instagram-engineering.tumblr.com/
+
+Dropbox tech blog
+http://tech.dropbox.com/
+
+很多细节都可以忽略不看，关键是看他们一般用什么software 
+packages，它们的特点是什么，解决了什么问题。
+
+此外还有一些常见的large-scale system会出现的问题和
+解决方案。事实上很多问题不知道已经被解决了多少次了。
+面试时只要能说出一般的解法就可以了。如果面你的人要
+刨根到底要新方法，你就说不要reinvent the wheel打哈哈
+就过去了。
+
+
+当然devil is in the details。看完这些没有实践是不行的，
+但是对于应付一般的码工面试应该是足够用了。
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 76.126.]
+
+
+发信人: feutcsk (Jim), 信区: JobHunting
+标  题: Re: 写一段如何准备large-scale system design的面试吧
+发信站: BBS 未名空间站 (Sat May 26 20:51:48 2012, 美东)
+
+补充两个，可以再看看fault tolerant(replicate和recover什么的)和
+synchronization/concurrency control
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 75.142.]
+
+

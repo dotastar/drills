@@ -1,0 +1,342 @@
+发信人: a060601199 (昵称), 信区: JobHunting
+标  题: linkedin,rocketfuel, google面经若干
+发信站: BBS 未名空间站 (Sat Jan 11 04:22:49 2014, 美东)
+
+L:
+
+问答题
+Write-through cache vs write-back cache 
+what's memory mapped file
+
+算法题，都是老题
+1) 给一个nested的int array， 返回sum of int weight by its depth
+2) 写一个支持removeRandom的hashtable
+3) 一串字符串，返回有多少个substring符合某些pattern，这些pattern都是10char的
+长度，所以逐个比较就可以了
+4) tree lowest ancestor( tree node have parent pointer)
+
+
+RF:
+基本全是老印，一个比一个吊炸天
+
+1) 给一个数字，可以删除k个digit，返回最小的结果
+example num=42139,k=1 == > 2139
+answers: 首先从左到右，如果左边的digit比右边的大，就删除左边的digit，如果删
+除不够k个digit则把最后的几位删掉，不大好实现，最好把输入变成array再做，或者
+java的string
+
+2) 写一个数据结构支持,put,get,getRandom
+    BST postorder to a linkedlist
+    convert sorted arry to BST
+
+3) hadoop任务进行到一半时候DFS name node挂了，如果记录state保证之后能继续任
+务而不是重新开始(这题其实没大懂）
+
+4) clone directed graph
+
+5) design a log system to record structure/object，有点serialize + key-value
+store filesystem 的感觉
+leetcode Interleaving String 
+
+
+google面的是TSE, technical solution engineer
+
+network trouble shooting，场景是客户说无法上网，让你如何一步步isolate 
+problem，很坑爹的题目
+
+还有就是给一堆http的报文，问你发生了什么
+
+考几个linux cmd，cat file | awk '{print $5}' | uniq
+
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 24.]
+
+
+
+发信人: godking (GK), 信区: JobHunting
+标  题: Re: linkedin,rocketfuel, google面经若干
+发信站: BBS 未名空间站 (Sat Jan 11 16:12:38 2014, 美东)
+
+RF1:
+
+从左到右扫描：
+记录当前最大， 
+1）如果当前值小于最大， 删除最大
+2）如果便利到最后，删除最大
+
+int deleteOne(char[] str, int n)
+{
+    if (n == 0)
+       return 0;
+    int j= 0;
+    for(int i=1; i<n; i++)
+    {
+       if (str[i]<str[j])
+       {
+           break;
+       }
+       else if (str[i] > str[j])
+       {
+           i = j;
+       }
+    }
+
+    for(int k=j; k<n-1; k++)
+    {
+       str[k] = str[k+1]  
+    }
+    return n-1;
+}
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 98.]
+
+
+发信人: reede (cat+of+king), 信区: JobHunting
+标  题: Re: linkedin,rocketfuel, google面经若干
+发信站: BBS 未名空间站 (Sat Jan 11 19:27:01 2014, 美东)
+
+应该是从左向右找第一个逆序，如42，31，去除逆序数。 如果无逆序，去最后一个数。
+
+string removal(string value)
+{
+    if(value.length()<2)
+    {
+        return value;
+    }
+
+    string vt;
+
+    unsigned int pos = 0;
+
+    for(; pos<value.length()-1; ++pos)
+    {
+        if(value[pos]>value[pos+1])
+        {
+            break;
+        }
+    }
+
+    if(pos < value.length()-1)
+    {
+        vt = value.substr(0, pos)+value.substr(pos+1);
+    } else
+    {
+        vt = value.substr(0, pos);
+    }
+
+    return vt;
+}
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 151.]
+
+
+
+发信人: bainikolaus (bainikolaus), 信区: JobHunting
+标  题: Re: linkedin,rocketfuel, google面经若干
+发信站: BBS 未名空间站 (Sun Jan 12 14:40:11 2014, 美东)
+
+
+【 在 blaze (狂且) 的大作中提到: 】
+: 你这个复杂性太高。O(n*k).  This is actually a majia for classic sliding 
+: window max/min in stream.  Use de-que to get O(n).
+: i 
+
+
+You are right. deque is much better. Below is the implementation using deque
+
+def solve2(s, k):
+    from collections import deque
+    d = deque(maxlen=k + 1)
+
+    n = len(s)
+    if n <= k:
+        return ''
+
+    for i in xrange(k + 1):
+        while d and ord(d[-1][1]) > ord(s[i]):
+            if s[i] == '0' and len(d) == 1:
+                break
+            d.pop()
+        d.append((i, s[i]))
+
+    res = []
+    for i in xrange(k + 1, n):
+        res.append(d.popleft()[1])
+
+        while d and d[0][0] < i - k:
+            d.popleft()
+
+        while d and ord(d[-1][1]) > ord(s[i]):
+            d.pop()
+
+        d.append((i, s[i]))
+
+    res.append(d.popleft()[1])
+
+    return ''.join(res)
+
+
+--
+
+※ 修改:·bainikolaus 於 Jan 13 08:05:24 2014 修改本文·[FROM: 88.]
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 88.]
+
+
+
+发信人: lauxp (秀才黄学州), 信区: JobHunting
+标  题: Re: linkedin,rocketfuel, google面经若干
+发信站: BBS 未名空间站 (Sun Jan 12 15:38:47 2014, 美东)
+
+中间有0的情况，比如
+10042319
+
+#include <stdio.h>
+
+int main(int argc, char * argv[])
+{
+        int num = atoi(argv[1]);
+        char s[] = "45002319";
+
+        printf("source: %s and num:%d", s, num);
+
+        size_t size;
+        while (num > 0 && (s && (size = strlen(s)) > 0))
+        {
+                if (size > 1)
+                {
+                        if (s[0] > s[1])
+                        {// 4[<4, 0]
+                                size_t cz = 1;
+
+                                char * n = s + 1;
+                                while (*n != '\0' && *n++ == '0')
+                                { // 40
+                                        cz += 1;
+                                }
+                                strcpy(s, s+cz);
+                        }
+                        else
+                        { //34
+                                strcpy(s+1, s+2);
+                        }
+                }
+                else
+                { // only one character, move forward
+                        *s = '\0';
+                }
+
+                num--;
+        }
+
+
+        printf(", result:%s\n", s);
+
+        return 0;
+}
+
+你们考虑过如果这个数是negative情况,比如
+-42319
+
+
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 192.]
+
+
+
+
+发信人: ACBingo (ACBingo), 信区: JobHunting
+标  题: Re: linkedin,rocketfuel, google面经若干
+发信站: BBS 未名空间站 (Sun Jan 12 22:47:49 2014, 美东)
+
+中间含0的情况, 我觉得应该尽量删除0前面的元素...
+发个自己写的:
+
+void remove(vector<int> & v, int i) {
+    vector<int>::iterator it = v.begin() + i;
+    v.erase(it);
+}
+
+int delk(int a, int K) {
+    if (a <= 0 || K <= 0) return a;
+    vector<int> v;
+    int t = a;
+    while (t) {
+        v.push_back(t%10);
+        t /= 10;
+    }
+    reverse(v.begin(), v.end());
+    int i;    
+    int cnt = 0;
+    while (cnt < K) {
+        i = 0;
+        while (i+1 < v.size() && v[i] <= v[i+1]) i++;
+        remove(v, i);
+        cnt++;
+    }
+    int r = 0;
+    for (i = 0; i < v.size(); i++) {
+        r *= 10;
+        r += v[i];
+    }
+    return r;
+}
+
+void run() {
+    //int a = 42139;
+    //int k = 4;
+    int a = 10042319;
+    int k = 4;
+    cout << delk(a, k) << endl;
+}
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 68.]
+
+
+
+
+
+发信人: Jasmina (茉莉阿茉莉), 信区: JobHunting
+标  题: Re: linkedin,rocketfuel, google面经若干
+发信站: BBS 未名空间站 (Wed Jan 15 07:27:33 2014, 美东)
+
+楼主第一题的思路是对的，即“左向右扫描，若左边一位比右边一位大，则删除左边，
+以此循环，如果最后还有删除名额，则删最后几位”。只是复杂度不是最优而已
+
+你上来就说人家“不对”，欠考虑吧，况且你一开始给出的解复杂度不比楼主的低
+
+这题根本不用deque，用个stack即可
+而且0为什么不能放第一位？1023，k=1删除第一位即可，得到23，为最小，用以下方法
+根本无需特殊处理
+
+public int getSmallest(String input, int k){
+    if(input == null || k > input.length()) return null;
+    Stack<Character> s = new Stack<Character>();
+    for(int i = 0; i < input.length(); i++){
+        while(!s.isEmpty() && s.peek() > input.charAt(i) && k-- > 0) s.pop();
+        s.push(input.charAt(i));
+    }
+    while(k-- > 0) s.pop();        
+    String rl = "";
+    while(!s.isEmpty()) rl = s.pop() + rl;
+    return Integer.parseInt(rl.length() == 0 ? "0" : rl); 
+}
+
+
+【 在 bainikolaus (bainikolaus) 的大作中提到: 】
+: 谢面经!
+: RF 第一题答的不对
+: EDIT：
+: 原先在这楼贴的算法复杂度高，而且没有考虑0不能放第一位。用deque可以做到O(n)，
+: 代码见本帖15楼
+:     
+
+
+--
+
+※ 修改:·Jasmina 於 Jan 15 07:31:29 2014 修改本文·[FROM: 128.]
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 128.]

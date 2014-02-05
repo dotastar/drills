@@ -1,0 +1,57 @@
+发信人: starapi (STAR test API), 信区: JobHunting
+标  题: G面试题，很难
+发信站: BBS 未名空间站 (Sat Jan  4 16:13:39 2014, 美东)
+
+4位的密码，遍历完所有0000-9999的可能性后，锁就能打开。
+
+把所有的可能密码连接在一起成为总长度为4*10000=40000的string。这个string的某
+连续四位肯定能够能解开锁。
+
+上面的string不是唯一的。比如实际密码是2345，string的某5位是12345，1234是一个
+组合，2345是另一个组合。也就是说他们共享了一些数字。导致总长度降低。
+
+现在求一个最短的string，其中某连续4位一定是可以解开锁的密码。
+
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 76.]
+ 	
+
+
+发信人: jcolinzheng (Colin Jia Zheng), 信区: JobHunting
+标  题: Re: G面试题，很难
+发信站: BBS 未名空间站 (Sun Jan  5 01:30:10 2014, 美东)
+
+This is not gray code.  No need to formulate it as TSP.  Also, debrujin 
+graph only gives you a problem formulation.  
+
+You can solve by finding an Eulerian tour.  Each node is a 3-digit number eg
+100, and two nodes 100 and 001 are adjacent if they can be combined into 
+1001.  Now every node has equal in-degree and out-degree, thus an Eulerien 
+tour exists and can be found using the standard algorithm.
+
+--
+
+※ 修改:·jcolinzheng 於 Jan  5 01:33:16 2014 修改本文·[FROM: 50.]
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 50.]
+
+
+
+发信人: jcolinzheng (Colin Jia Zheng), 信区: JobHunting
+标  题: Re: G面试题，很难
+发信站: BBS 未名空间站 (Tue Jan  7 00:59:12 2014, 美东)
+
+
+【 在 MaGongJia (code farmer one) 的大作中提到: 】
+: 我老编了个程序验证过了，基本只要一位一位算过去，如果不行就backtracking就行了
+: ，其实需要backtracking的情况很少。
+: 基本只要1003个字符就可以了，而且首尾可以衔接，也就是说一个1000的环就可以了
+
+
+对的，你的backtrack work就是因为Eulerian tour存在
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 50.]
+
+
+

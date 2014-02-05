@@ -1,0 +1,30 @@
+发信人: jobs2012 (不努力，毋宁死), 信区: JobHunting
+标  题: 总结下f家的几道经典设计题
+发信站: BBS 未名空间站 (Tue May 21 13:44:34 2013, 美东)
+
+都有ranking的问题
+1. search box里的auto suggestion，按亲疏rank
+2. news feed里的posts，按兴趣rank
+3. mobile search里附近的points of interest，按兴趣rank
+
+分别涉及的数据结构是
+1. trie
+2. observer pattern
+3. spatial indexing(r-tree?)
+
+在以上数据结构里如何各自加入priority的加权？
+1. trie怎么加权？
+2. observer通知update时如何加权？
+3. spatial indexing如何对每一次query加权？
+
+望牛牛们指点一二。
+
+
+--
+
+※ 修改:·jobs2012 於 May 21 13:45:30 2013 修改本文·[FROM: 68.]
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 68.]
+
+
+
+

@@ -1,0 +1,96 @@
+SureInterview http://www.sureinterview.com/shwqst/1019005
+
+Design a class that supports insert, delete, and get random element.
+
+Question:
+
+Given a collection of integer, design a class that supports: 
+add(data) - insert an element
+delete(data) - delete an element
+getRandom(data) - return a random element
+
+
+Answer:
+
+General Idea
+
+The commonly used data structures do not efficiently satisfy all of the features. So we should hook up multiple data structures to provide an efficient solution.
+
+Because the getRandom is most demanding -- only array can support getRandom(), the array should be used to let getRandom part work. The array is not quite good at deleting data in the middle, so the data should be stored in some other data structure. Here, the link list won't work either because the delete function needs to randomly access the data. A better structure is the hash table. So, we can use a hash table to save the data and an array to provide random access function. 
+implementation
+when all data elements are unique
+
+Here is the pseudo code. Note that this version does not support duplicated data.
+
+              
+	class AClassSupportsGetRandom<T> {
+		class Data {
+			T data;
+			int idx;
+		}
+
+		Data dataArr[]; // for hashing data
+		final int HASH_SIZE = 0x100000 - 1;
+
+		int rndArr[]; // the array for getting random data.
+		int size;;
+
+		void add(T data) {
+			int pos = hashFunction(data); // get the insert position
+			dataArr[pos].data = data;
+			dataArr[pos].idx = size; // append to the tail of the index array. hook two structures together.
+
+			rndArr[size] = pos;
+			size++;
+		}
+
+		public int getSize() {
+			return size;
+		}
+
+		private final int hashFunction(T data) {
+			int pos = Math.abs(data.hashCode()) % HASH_SIZE;
+			// handle conflict, size, etc.
+			return pos;
+		}
+
+		T getRandomData() {
+			int rnd = getAValidRandomNumber();
+			return dataArr[rndArr[rnd]].data;
+		}
+
+		//delete
+		void delete(T data) {
+			if( isEmpty() )
+			  return;
+			int pos = hashFunction(data);
+			T dat = dataArr[pos].data;
+			dataArr[pos].data = null;
+
+			//to avoid moving large data block left, the data at the tail is moved to middle instead.
+			//so the pointers needs to be adjusted.
+			size--;
+			rndArr[pos] = rndArr[size]; //move pointer to middle
+			dataArr[rndArr[size]].idx = pos; // adjust the pointer in data array.
+		}
+	}
+
+            
+
+when there is duplicated data
+
+The existence of duplicated data is further conflict with the hash table structure. To keep the up the high performance, the conflict can be resolved by a linked list (or, separate chain). But with this change, the getRandom is not random any more. The duplicated data put extra weight on each element, so the element picked is biased. To solve this problem, each duplicated element has to appear in the index array. Considering the requirements, the rndAry can implement multiple link lists to store the conflict data. In that way, the data are still in an array but it has internal linked list structure to resolve the confliction.
+
+So, we can first define a new data structure: 
+              
+class Data {
+        T data;
+        int prev, next; // for the linked list structure in rndArr
+    }
+
+            
+ When adding a non-existing data, new entries will be added in both dataArr and rndArr. If the data already exits in the hash table, only put a new entry in rndArr and hook up to the existing one as a chain. When deleting a data, if the data is still duplicated, we will remove the element from the head linked list. As we did before, the last element in rndAry should be moved to fill the gap where the data is deleted. The hash table and the rndAry should be adjusted to maintain the data integrity. If the data being deleted is the last one in the hash table, the entry in hash table also needs to be deleted. To get a random data, we just need to randomly pick up one element. Nothing is changed here.
+
+Unit test
+
+To test the getRandom, we can set the random seed so the random process can be repeated. Or simply overwrite (overload) the method with a non-random version so the behavior is totally controlled.

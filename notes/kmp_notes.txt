@@ -1,0 +1,39 @@
+KMP algorithm failure function.
+
+Assuming the partially matched substring in the pattern string is
+
+	c_1 c_2 c_3 ... c_i.
+
+Prefix
+
+	c_1 c_2   ... c_k (k < i)
+
+is the longest proper prefix matching suffix
+
+	c_j c_j+1 ... c_i (j > 1)
+
+The following is an illustration showing the prefix matches the suffix.
+
+	c_1 c_2 c_3 ... c_j c_j+1 ... c_i
+			c_1 c_2   ... c_k
+
+Now extend the partially matched substring in the pattern to c_i+1:
+
+	c_1 c_2 c_3 ... c_j c_j+1 ... c_i c_i+1
+			c_1 c_2   ... c_k c_k+1		(1)
+
+If c_i+1 == c_k+1 then c_1 c_2 ... c_k+1 is longest proper prefix matching
+a suffix of c_1 ... c_i+1. Could it be any longer? Consider
+
+	c_1 c_2 c_3 ... c_j-1 c_j c_j+1 ... c_i   c_i+1
+			c_1   c_2 c_3   ... c_k+1 c_k+2
+
+In this case, c_1 c_2 ... c_k+1 becomes be a longer prefix matching a suffix
+of c_1 ...  c_i, a contradictory.
+
+In (1), if c_i+1 != c_k+1, we check a shorter prefix:
+
+	c_1 c_2 c_3 ... c_j c_j+1 ... c_i-1 c_i   c_i+1
+			    c_1   ... c_k-2 c_k-1 c_k
+
+

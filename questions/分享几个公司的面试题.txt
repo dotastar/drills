@@ -1,0 +1,35 @@
+发信人: city1000 (city1000), 信区: JobHunting
+标  题: 分享几个公司的面试题
+发信站: BBS 未名空间站 (Sat Feb  8 02:06:35 2014, 美东)
+
+1.bloomberg:
+电面一轮就挂了。。。
+问了很多C++ 的问题，比如virtual 析构函数。最后竟然问了database的问题。怎么设
+计表之类的。基本没懂到底要问什么。。。
+
+2. LinkedIn
+一轮电面水果。 判断string是否为合法整数。 还有一个算和的。非常简单。。
+二面： pow（）实现（leetcode）. 最大子序列和（leetcode）. 根据第二题，改成最
+大乘积（就挂在这题上了。。。）
+
+3.rocket fuel
+一轮电面： 好像版上有人面google也是这题： 一个数组A[], 构造数组B[]。 要求B[i
+]= A中所以元素的乘积，除了A[i].不让用除法。 扫两遍数组搞定。
+然后就是他家的经典题目 millions of ADs.
+二轮电面： 跟面试官扯了很久做过的project。就出了一题。找出二叉树中任意两节点
+的路径。面试官人很nice。开始思路不是很优化。给了点提示。时间关系没有写完。但
+是基本上把最主要的找路径给写完了。
+三轮电面： Young table 的问题。leetcode原题。 告诉面试官我知道这题。这种
+matrix叫young table.面试官表示木有听说过。。。。
+复制链表。leetcode原题。
+
+4. facebook
+电面： 水果。。。就一题，根据有序数组生成平衡BST。 问了一下复杂度。
+
+5. Zynga
+电面： billion 个整数，找出median。 答的不好。没怎么准备过这类题。挂掉。。。
+应该是用双层桶。答案在这里http://blog.csdn.net/v_july_v/article/details/7382693
+
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 98.]

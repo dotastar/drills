@@ -1,0 +1,142 @@
+发信人: yixiuge (机器猫), 信区: JobHunting
+标  题: Re: 若问OJ的insert interval这题
+发信站: BBS 未名空间站 (Fri Feb  7 20:10:48 2014, 美东)
+
+/*
+Algorithm: Modified Binary search
+[1,3],[6,9], insert and merge [2,5] in as [1,5],[6,9].        
+1. BSearch to find the 'first' interval whose end >= newInterval.start.
+If does not find, the new interval should be appended at the tail.
+2. BSearch to find the 'last' interval whose start <= newInterval.end.
+If does not find, the new interval should be inserted before the head.
+3. Erase the found 'first' to 'last' intervals and insert the new merged 
+interval at index 'first'
+*/
+
+vector<Interval> insert(vector<Interval> &intervals, Interval newInterval) {
+    int n = intervals.size();
+    if (n == 0) {
+        intervals.push_back(newInterval);
+        return intervals;
+    }
+    int first = -1, last = -1;// first and last interval to be merged/erased
+    int l = 0, r = n-1;
+    while (l < r) {
+        int m = (l+r)/2;
+        if (intervals[m].end >= newInterval.start) 
+            r = m;
+        else 
+            l = m+1;
+    }
+    first = intervals[l].end >= newInterval.start ? l : n;
+    
+    l = 0, r = n-1;
+    while (l < r) {
+        int m = (l+r)/2+1;
+        if (intervals[m].start <= newInterval.end) 
+            l = m;
+        else 
+            r = m-1;
+    }
+    last = intervals[l].start <= newInterval.end ? l : -1;
+    if (first == n)
+        intervals.push_back(newInterval); 
+    else if (last == -1)
+        intervals.insert(intervals.begin(), newInterval);
+    else {
+        //[1,3],[6,9], insert and merge [2,5] in as [1,5],[6,9].        
+        int newStart = min(newInterval.start, intervals[first].start);
+        int newEnd = max(newInterval.end, intervals[last].end);
+        Interval merged(newStart, newEnd); 
+        intervals.erase(intervals.begin()+first,intervals.begin()+last+1);
+        intervals.insert(intervals.begin()+first, merged);
+    }
+    return intervals;
+}
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 198.]
+
+
+发信人: seattlexxx (no), 信区: JobHunting
+标  题: Re: 若问OJ的insert interval这题
+发信站: BBS 未名空间站 (Sat Feb  8 12:00:55 2014, 美东)
+
+ls的binary search还是有可以improve的地方，因为在hit到某个interval时search就
+可以停止了，效率更高。我贴一些我的代码吧。思路是跟ls一样的。谢谢ls的代码。
+
+    public ArrayList<Interval> insert(ArrayList<Interval> intervals, 
+Interval newInterval) {
+        int n = intervals.size();
+        if (n==0) {
+            intervals.add(newInterval);
+            return intervals;
+        }
+        int first = -1, last = -1; // first and last interval to be merged/
+erased
+        int l = 0, r = n - 1;
+//        BSearch to find the 'first' interval whose end >= newInterval.
+start.
+//        If does not find, the new interval should be appended at the tail.
+        while (l < r) {
+            int m = l + ((r-l) >>> 1);
+            if (newInterval.start <= intervals.get(m).end) {
+                if (newInterval.start == intervals.get(m).end || m == 0 ||
+                        intervals.get(m-1).end < newInterval.start) {
+                    l = m;
+                    break;
+                }
+                r = m - 1;
+            } else {
+                l = m + 1;
+            }
+        }
+        first = intervals.get(l).end >= newInterval.start ? l : n;
+        l = 0;
+        r = n - 1;
+//        BSearch to find the 'last' interval whose start <= newInterval.end.
+//        If does not find, the new interval should be inserted before the 
+head.
+        while (l < r) {
+            int m = l + ((r-l)>>>1);
+            if (intervals.get(m).start <= newInterval.end) {
+                if (intervals.get(m).start == newInterval.end || newInterval
+.end < intervals.get(m+1).start) {
+                    l = m;
+                    break;
+                }
+                l = m + 1;
+            } else {
+                r = m - 1;
+            }
+        }
+        last = intervals.get(l).start <= newInterval.end ? l : -1;
+        if (first == n) {
+            intervals.add(newInterval);
+        } else if (last == -1) {
+            intervals.add(0, newInterval);
+        } else {
+//            Erase the found 'first' to 'last' intervals and insert the new
+merged
+//            interval at index 'first'
+            int newStart = Math.min(newInterval.start, intervals.get(first).
+start);
+            int newEnd = Math.max(newInterval.end, intervals.get(last).end);
+            Interval merged = new Interval(newStart, newEnd);
+            ArrayList<Interval> tmp = new ArrayList<Interval>();
+            for (int i = 0; i < first; i++) {
+                tmp.add(intervals.get(i));
+            }
+            tmp.add(merged);
+            for (int i = last + 1; i < intervals.size(); i++) {
+                tmp.add(intervals.get(i));
+            }
+            intervals = tmp;
+        }
+        
+        return intervals;
+    }
+
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 24.]

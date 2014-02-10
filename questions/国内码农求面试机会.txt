@@ -1,0 +1,34 @@
+发信人: soulmachine (soulmachine), 信区: JobHunting
+标  题: 国内码农求面试机会，清华硕士，工作过3年
+发信站: BBS 未名空间站 (Sun Feb  9 07:19:20 2014, 美东)
+
+hi，大家好，第一次发帖，想找到一些面试机会。在国内找美国的工作，面试机会很少
+，简历曝光率很低。我只知道FLAGT，就像美国人只知道中国有百度腾讯阿里一样，我
+相信美国还有其他很多好公司，可是苦于不知道如何联系上这些公司，希望路过的各位
+帮帮忙。所以冒昧来这里发一个帖子，增加自己的曝光率。
+
+简单介绍一下我自己，目前在清华读硕士，今年6月份毕业。曾经工作过3年。
+
+我的技术博客是 ： http://www.yanjiuyanjiu.com
+新浪微博：http://weibo.com/soulmachine
+
+我工作中主要做搜索引擎，在读硕士近三年，学了点机器学习。最近半年在做Spark这
+个开源项目，目前成为了contributor之一，https://github.com/apache/incubator-
+spark/graphs/contributors , 贡献排名在51位
+
+算法方面，我写过两本开源的算法书，https://github.com/soulmachine/leetcode, 
+https://github.com/soulmachine/acm-cheat-sheet
+
+机器学习方面，我给Spark贡献过一个naive bayes classifer, https://github.com/
+apache/incubator-spark/pull/292, 已经被Merge，还有一个random forest，还没有
+被merge, https://github.com/apache/incubator-spark/pull/370
+
+我非常熟悉Hadoop，对Linux等各种工具很熟，经常给团队搭建集群，开发环境等等，
+能够算半个运维。
+
+我的邮箱是 soulmachine@gmail.com ，如果你的公司招人，或者能够refer我，感激不
+尽。
+
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 8.]

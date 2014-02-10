@@ -1,0 +1,16 @@
+发信人: city1000 (city1000), 信区: JobHunting
+标  题: 请教几个面试题
+发信站: BBS 未名空间站 (Sun Feb  9 20:23:05 2014, 美东)
+
+1. merge n 个 sorted list. 但是list 很长会花非常多时间，问怎样设计程序达到高
+效率
+
+2.假设现在有很多数据，99%是8-bit integer, 1% 是64-bit integer, 如何记录
+
+3.given an array of integers, and a difference d, produce the longest 
+arithmetic progression chain from the array with the given difference.
+
+不知道大家有思路没？
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 98.]

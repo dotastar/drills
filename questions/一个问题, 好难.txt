@@ -1,6 +1,3 @@
-
-	我的博客
-[回复] [回信给作者] [本篇全文] [本讨论区] [修改] [删除] [转寄] [转贴] [收藏] [举报]		[ 1 ]
 发信人: stevenzzz (山贼下山), 信区: JobHunting
 标  题: 一个问题, 好难好难?
 发信站: BBS 未名空间站 (Thu Feb  6 13:53:20 2014, 美东)
@@ -17,3 +14,83 @@
 --
 
 ※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 140.]
+
+
+发信人: stevenzzz (山贼下山), 信区: JobHunting
+标  题: Re: 一个问题, 好难好难?
+发信站: BBS 未名空间站 (Thu Feb  6 14:04:26 2014, 美东)
+
+我也觉得不行...
+是要用simhash之类的近似吗?
+
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 140.]
+
+
+
+发信人: jas7 (jas7), 信区: JobHunting
+标  题: Re: 一个问题, 好难好难?
+发信站: BBS 未名空间站 (Sun Feb  9 16:51:14 2014, 美东)
+
+apriori algorithm
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 72.]
+
+
+
+发信人: cowboy747 (vow), 信区: JobHunting
+标  题: Re: 一个问题, 好难好难?
+发信站: BBS 未名空间站 (Sun Feb  9 20:51:43 2014, 美东)
+
+这类问题就是N个set求找到两个set使其中的共同token数最多。共同点就是某个token
+是否在某个set中的lookup时间为O（1）。假设每个set的size为k
+
+两两比较的方法：对于每个set的每个token，在剩余set中查找是否存在。时间复杂度
+为O(k*n^2)
+
+逆向index的方法：对于每个token，建立一个index set，放入到一个map里，这一步需
+要遍历所有token，O(n*k)。再建立一个n*n的matrix, 遍历一遍前面建立好的index 
+map，update matrix里面对应的common token count。worst case 也是O(k*n^2),但是
+average 应该会比前面的方法好一些。
+
+
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 198.]
+
+
+
+发信人: stevenzzz (山贼下山), 信区: JobHunting
+标  题: Re: 一个问题, 好难好难?
+发信站: BBS 未名空间站 (Sun Feb  9 22:31:18 2014, 美东)
+
+应该是高维度空间里面的最近点对问题, 一个大牛说了可以再Nlog(N)的时间里面完成,
+就用类似于二维平面的分治法来做. 
+
+但是实现起来也觉得好难, 还有就是维度高的时候,一分两半以后, 就算求距中轴的最
+短距离的那些点的时候, 说不定也都是N^2的了.
+
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 64.]
+
+
+
+发信人: baoniao (胡礼), 信区: JobHunting
+标  题: Re: 一个问题, 好难好难?
+发信站: BBS 未名空间站 (Mon Feb 10 01:55:36 2014, 美东)
+
+vp tree
+
+http://www.cs.iastate.edu/~honavar/nndatastructures.pdf
+
+http://en.wikipedia.org/wiki/Vantage-point_tree
+
+
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 173.]
+
+

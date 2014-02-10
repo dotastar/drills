@@ -1,0 +1,14 @@
+发信人: kazumi (忍者), 信区: JobHunting
+标  题: L的onsite冤了
+发信站: BBS 未名空间站 (Wed Feb  5 03:00:30 2014, 美东)
+
+给一个list of sentences, 然后找出一个pair,common words 最大。
+This is a good day
+This is a bad day
+That was good day
+
+return 第一个和第二个句子，因为有四个common words
+
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 71.]

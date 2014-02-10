@@ -1,0 +1,60 @@
+发信人: kazumi (忍者), 信区: JobHunting
+标  题: 最近面经经常见的一题
+发信站: BBS 未名空间站 (Thu Jan 30 00:28:31 2014, 美东)
+
+minimum weight of two groups
+mattcb.blogspot.com/2013/03/minimum-weight-of-two-groups.html
+这题需要用dp？排序+sum(|ai-bi|)就行了吧？
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 66.]
+
+
+发信人: rosaic (Robert), 信区: JobHunting
+标  题: Re: 最近面经经常见的一题
+发信站: BBS 未名空间站 (Sun Feb  9 03:33:37 2014, 美东)
+
+assume a_n, b_n are biggest, without loss of generosity assume a_n >= b_n
+
+let assume the optimal answer is 
+
+(a_n, b_i) (b_n, a_j)
+
+obvious a_n - b_i = a_n - b_n + b_n - b_i
+So you can get 
+
+|b_i - a_j| <= |b_n - a_j| + b_n - b_I 
+
+so use a_n b_n pair can never make it worst, (in some case it get the same 
+result), so pair diff use sorting get the best result
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 98.]
+
+
+
+发信人: madmonk (madmonk), 信区: JobHunting
+标  题: Re: 最近面经经常见的一题
+发信站: BBS 未名空间站 (Sun Feb  9 13:35:20 2014, 美东)
+
+actually
+the solution from //http://mattcb.blogspot.com/2013/03/minimum-weight-of-two-groups.html
+works for the case when an element can be in multiple pairs,
+while sort then |a[i]-b[i]| works for the case when an element can NOT be in
+multiple pairs
+
+try 
+B= new int[]{5,3,4,7};
+A= new int[]{1,2,-1,6}; 
+
+仔细看了看，
+there are two groups of people; n number of A's & n of B's. We want to have 
+n pairs of A and B from two groups and  to minimize the sum of the weight 
+differences.
+好像不限重复用。
+
+
+--
+
+※ 修改:·madmonk 於 Feb  9 13:47:38 2014 修改本文·[FROM: 76.]
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 76.]

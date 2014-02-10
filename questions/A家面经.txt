@@ -1,0 +1,45 @@
+发信人: haoranfang (xiaoFang), 信区: JobHunting
+标  题: A家面经
+关键字: Amazon,面经
+发信站: BBS 未名空间站 (Fri Jan 31 20:29:19 2014, 美东)
+
+电面1:
+两道SQL题，一个半月前的，实在记不得，不过挺简单，连嵌套都不用
+
+电面2：
+2sum，没什么好说的，半个小时完事
+
+onsite：5轮
+1.第一题是找出数组中的unique number。第二题是给一个数组和k，如果存在一个数
+arr[i]，它的duplication在i-k到i+k之间，则返回true，else false
+
+2.lunch interview，都是那种tell me a time when...的题型
+
+3.一道班上没见过或者被我忽略了的题：给一个matrix[][]，有些位置的值是*，代表
+星星，连续的星星算是一个星座，问matrix里有多少星座（单独的星星也算一个星座）
+e.g.
+**0**0
+*00*00
+000*00
+*00000
+上图有三个星座，返回3
+
+4.pair-wise reverse a linked list
+input:1->2->3->4->5->null
+return: 2->1->4->3->5->null
+设计题是设计一个ranking system，用于查找购买次数最多的top k music
+
+5.find the first unique item in a set of data, given only hasNext() and 
+getNext() methods for accessing the items in the data set
+设计：用户的电影品味偏好：假设电影有genre，用户每看一个电影会给一个评分，用
+户看了1000部电影，找出评分最高的k部电影中，出现频率最高的genre
+
+电面1是SQL的原因是因为他们本来打算给我data analyst，后来又改面SDE
+
+几小时前的面经，已累跪。。。顺带求一下bless。。。主要目的是向大家拜年（真的
+？）
+
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 50.]
+

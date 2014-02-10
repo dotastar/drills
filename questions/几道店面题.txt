@@ -1,0 +1,65 @@
+发信人: samuncle ( 山 姆 大 叔), 信区: JobHunting
+标  题: 几道店面题， 大家讨论一下
+发信站: BBS 未名空间站 (Fri Feb  7 19:51:05 2014, 美东)
+
+刚面的， coding 四道不难本版有。
+这几道不会：
+1. mutex 内部怎么实现的? 
+2. char* p = malloc(100); p++; free(p) 发生什么？
+3. web browser multiple tabs 用mthread 还是 mprocess;
+4. 设计一个翻译器， 输入英语， 可按要求输出中文， 印度语等任意语种问数据结构
+是什么，我说哈西或Trie， 问如果输入任意语种，可按要求输出任意语种哪？我不知
+道了。
+
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 24.]
+
+
+
+发信人: nklijia (nklijia), 信区: JobHunting
+标  题: Re: 几道店面题， 大家讨论一下
+发信站: BBS 未名空间站 (Fri Feb  7 22:08:15 2014, 美东)
+
+第三个是多进程的，为了防止一个网页出现错误，crash了其他的网页
+
+MULTIPROCESS ARCHITECTURE—CHROME BROWSER
+Many websites contain active content such as JavaScript, Flash, and HTML5 to
+provide a rich and dynamic web-browsing experience. Unfortunately, these 
+web applications may also contain software bugs, which can result in 
+sluggish response times and can even cause the web browser to crash. This 
+isn’t a big problem in a web browser that displays content from only one 
+website. But most contemporary web browsers provide tabbed browsing, which 
+allows a single instance of a web browser application to open several 
+websites at the same time, with each site in a separate tab. To switch 
+between the different sites , a user need only click on the appropriate tab.
+This arrangement is illustrated below:
+A problem with this approach is that if a web application in any tab crashes
+, the entire process—including all other tabs displaying additional 
+websites —crashes as well.
+Google’s Chrome web browser was designed to address this issue by using a 
+multiprocess architecture. Chrome identifies three different types of 
+processes: browser, renderers, and plug-ins.
+• The browser process is responsible for managing the user interface 
+as well as disk and network I/O. A new browser process is created when 
+Chrome is started. Only one browser process is created.
+• Renderer processes contain logic for rendering web pages. Thus, they
+contain the logic for handling HTML, Javascript, images, and so forth. As a
+general rule, a new renderer process is created for each website opened in 
+a new tab, and so several renderer processes may be active at the same time.
+• A plug-in process is created for each type of plug-in (such as Flash
+or QuickTime) in use. Plug-in processes contain the code for the plug-in as
+well as additional code that enables the plug-in to communicate with 
+associated renderer processes and the browser process.
+The advantage of the multiprocess approach is that websites run in isolation
+from one another. If one website crashes, only its renderer process is 
+affected; all other processes remain unharmed. Furthermore, renderer 
+processes run in a sandbox, which means that access to disk and network I/O 
+is restricted, minimizing the effects of any security exploits.
+【 在 city1000 (city1000) 的大作中提到: 】
+: 3.应该是多线程
+
+
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 206.]

@@ -114,16 +114,252 @@ increasing counter做xor，这个increasing counter也是有16Byte，从00..01�
 后有奇迹发生吧。
 
 
+--
+
+※ 修改:·bainikolaus 於 Feb  8 16:20:42 2014 修改本文·[FROM: 88.]
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 88.]
 
 
 
+发信人: rosaic (Robert), 信区: JobHunting
+标  题: Re: G面经 求bless
+发信站: BBS 未名空间站 (Sun Feb  9 03:03:35 2014, 美东)
+
+第二题
+
+public boolean recCheckBST(TreeNode node, int upperBound, int lowerBound) {
+   if (node == null) {
+      return true;
+   }
+   if (node.val <= upperBound && node.val >=lowerBound) {
+     return recCheckBst(node.left, root.val, lowerBound) && recCheckBst(node
+.right, upperBound, rootNode.Val);
+   }
+}
+
+public boolean checkBst(TreeNode root) {
+  if (root == null) {
+     // ask the interviewer what should return;
+  return recCheckBst(root, Long.MAX, Long.MIN);
+}
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 98.]
+ 
 
 
+发信人: godking (GK), 信区: JobHunting
+标  题: Re: G面经 求bless
+发信站: BBS 未名空间站 (Sun Feb  9 15:19:53 2014, 美东)
 
+电面2似乎本版讨论过几次了，我还贴过code。基本就是 high和low boundary一次遍历。
+onsite 1： 楼主回家后的思路是对的
+onsite 2：
+1）前->末遍历 记录到目前位置，使用过的 digit
+2）末->前遍历 对每一个数字，查找是否存在，大于自己切未使用的数字，如找到，
+break
+  如果2）到了头，且头是9，需要进位
+3) 从break的位置开始-》末遍历，依次选取最小且未使用的数字
+
+string next(string input)
+{
+    int n = input.size();
+    vector<int> v(10, 0);
+    // step 1: set used digits
+    for(int i=0; i<n; i++)
+    {
+        v[input[i]-'0'] = 1;
+    }
+    
+    // step 2: find bigger unused digit at cur pos
+    int i= n-1;
+    for(i=n-1; i>=0; i--)
+    {
+        int j = (input[i] - '0');
+        int k = j+1;
+        
+        // clear
+        v[j] = 0;
+        
+        for(;k<=9 && v[k] == 1; k++)
+        {}
+        
+        // found possible pos, break
+        if (k<=9)
+        {
+            v[k] = 1;
+            break;
+        }
+    }
+    string str = "";
+    // step 2, till front, and still no valid pos example: "987"
+    // next should be: "1023"
+    if (i == -1)
+    {
+        str = "1";
+        v[1] = 1;
+    }
+    // step 3.1 copy first digits
+    for(int j=0; j<=i; j++)
+    {
+        str += input[j];
+    }
+    
+    // step 3.2: set correct smallest and increasing digits from break 
+position
+    for(++i; i<n; i++)
+    {
+        bool succ=false;
+        for(int j=0; j<=9; j++)
+        {
+            if (v[j] == 0)
+            {
+                str += '0' + j;
+                v[j] = 1;
+                succ = true;
+                break;
+            }
+        }
+        // case: 9876543210, no possible solution, return ""
+        if (!succ)
+        {
+            return "";
+        }
+    }
+    return str;
+}
 
 
 
 --
 
-※ 修改:·bainikolaus 於 Feb  8 16:20:42 2014 修改本文·[FROM: 88.]
-※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 88.]
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 166.]
+
+
+
+发信人: city1000 (city1000), 信区: JobHunting
+标  题: Re: G面经 求bless
+发信站: BBS 未名空间站 (Sun Feb  9 16:50:37 2014, 美东)
+
+第一轮应该是用DP。扫两遍，第一遍从头到尾。第二遍倒过来扫。
+如果用DFS，复杂度就不能保证是N^2了。
+
+void findDistance(vector<vector<char> > &block){
+    if(block.empty()) return;
+    int row = block.size(), col = block[0].size();
+    for(int i=0; i<row; i++){
+        for(int j=0; j<col; j++){
+            if(block[i][j] == 'B' || block[i][j] == 'G')
+                continue;
+            
+            int step = '0';
+            if(i>0 && block[i-1][j] != 'B' && block[i-1][j] != '0') 
+                step = (block[i-1][j] == 'G')? '1' : block[i-1][j]+1;
+            if(j>0 && block[i][j-1] != 'B' && block[i][j-1] != '0'){
+                if(step == '0') step = (block[i][j-1] == 'G')? '1' : block[i
+][j-1]+1;
+                else step = min(step, (block[i][j-1] == 'G')? '1' : block[i]
+[j-1]+1);
+            }
+            if(block[i][j] != '0') 
+                step = min(step, block[i][j]+0);
+            block[i][j] = step;
+        }
+    }
+    for(int i=row-1; i>=0; i--){
+        for(int j=col-1; j>=0; j--){
+            if(block[i][j] == 'B' || block[i][j] == 'G')
+                continue;
+            int step = '0';
+            if(i<row-1 && block[i+1][j] != 'B' && block[i+1][j] != '0') 
+                step = (block[i+1][j] == 'G')? '1' : block[i+1][j]+1;
+            if(j<col-1 && block[i][j+1] != 'B' && block[i][j+1] != '0'){
+                if(step == '0') step = (block[i][j+1] == 'G')? '1' : block[i
+][j+1]+1 ;
+                else step = min(step, (block[i][j+1] == 'G')? '1' : block[i]
+[j+1]+1);
+            }
+            if(block[i][j] != '0') step = min(step, block[i][j]+0);
+            block[i][j] = step;
+        }
+    }
+}
+
+
+
+--
+
+※ 修改:·city1000 於 Feb  9 17:00:22 2014 修改本文·[FROM: 98.]
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 98.]
+
+
+
+发信人: city1000 (city1000), 信区: JobHunting
+标  题: Re: G面经 求bless
+发信站: BBS 未名空间站 (Sun Feb  9 18:45:46 2014, 美东)
+
+我把你的代码重新优化了一下。。。
+
+string next(string input){
+    int n = input.size();
+    bitset<10> v;
+    vector<int> arr(n, 0);
+    
+    // step 1: set used digits
+    for(int i=0; i<n; i++){
+        v[input[i]-'0'] = true;
+        arr[i] = input[i] - '0';
+    }
+    // step 2: find bigger unused digit at cur pos
+    int i= n-1;
+    for(; i>=0; i--){
+        int j = (input[i] - '0');
+        int k = j+1;
+        
+        // clear
+        v[j] = false;
+        
+        for(;k<=9 && v[k]; k++);
+        // found possible pos, break
+        if (k<=9){
+            v[k] = true;
+            arr[i] = k;
+            break;
+        }
+    }
+    
+    // step 2, till front, and still no valid pos example: "987"
+    // next should be: "1023"
+    bool carry = false;
+    if(i == -1){
+        if(v.count() == 0 && n==10) return "";
+        carry = true;
+        v[1] = true;
+    }
+    // step 3.2: set correct smallest and increasing digits from break 
+position
+    int j=0;
+    for(++i; i<n; i++){
+        for(; j<=9; j++){
+            if (v[j] == false){
+                arr[i] = j;
+                v[j] = true;
+                j++;
+                break;
+            }
+        }
+    }
+    if(carry) arr.insert(arr.begin(), 1);
+    
+    string str="";
+    for(int t: arr) 
+        str+= t+'0';
+    return str;
+}
+
+
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 98.]
+
+

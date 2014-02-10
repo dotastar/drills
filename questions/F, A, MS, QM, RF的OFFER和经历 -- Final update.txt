@@ -311,3 +311,85 @@ you find out the problems, and how to fix them?
 
 ※ 修改:·xiaolongnv84 於 Dec 12 18:13:52 2013 修改本文·[FROM: 108.]
 ※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 172.]
+
+
+
+发信人: yuki333 (yuki333), 信区: JobHunting
+标  题: xiaolongnv84大侠面经中的几道题的最优解法是什么？
+发信站: BBS 未名空间站 (Sat Feb  8 01:07:12 2014, 美东)
+
+感谢xiaolongnv84前辈提供的面经:
+http://www.mitbbs.com/article_t/JobHunting/32568289.html
+
+这几道题的最优解法是什么？google了半天好像也没看到有什么统一的答案。
+
+1.Given an integer, return the next prime number bigger than it.
+
+2.Given random() that can return 0 or 1 uniformly, implement random_new()
+that can return 0 with 90%, and 1 with 10%.[答案见4楼]
+
+3.Design a distributed LRU
+
+4.Design: suppose you have a cluster, and each machine in this cluster 
+has a large number of numbers. How can you find out the median of all the 
+numbers on all the machines.
+
+5.Given a set of points on a plane, and a list of circles centered at the 
+original point, find the ring containing the most number of points.
+
+
+--
+
+※ 修改:·yuki333 於 Feb  9 14:27:07 2014 修改本文·[FROM: 67.]
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 67.]
+
+
+
+
+发信人: elfandi (elfandi), 信区: JobHunting
+标  题: Re: 请问这几道题的最优解法是什么？
+发信站: BBS 未名空间站 (Sat Feb  8 01:13:19 2014, 美东)
+
+2
+算10次，2进制是0-1023，
+0-99 1
+100-999 0
+其他再算一次
+
+
+--
+
+※ 来源:·BBS 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 24.]
+
+
+
+发信人: city1000 (city1000), 信区: JobHunting
+标  题: Re: 请问这几道题的最优解法是什么？
+发信站: BBS 未名空间站 (Sat Feb  8 22:22:26 2014, 美东)
+
+1.Given an integer, return the next prime number bigger than it.
+
+第一题也太恶心了吧！没学过这个算法的怎么可能做出来啊！
+http://stackoverflow.com/questions/2468412/finding-a-prime-numb
+我都没看这个算法。。头大
+顿时对找工作木有信心了。。。
+
+3.Design a distributed LRU
+这题我觉得是因为原LZ有这方面的背景才问的。估计方法跟单机一样。就是要考虑并发
+同步的问题吧。。。瞎猜的。。
+
+4.Design: suppose you have a cluster, and each machine in this cluster 
+has a large number of numbers. How can you find out the median of all the 
+numbers on all the machines.
+类似于N-way merge ？？？要不就是median of median,不过这种方法得到的结果是近
+似的。。。
+
+5.Given a set of points on a plane, and a list of circles centered at the 
+original point, find the ring containing the most number of points.
+这些园都是同心圆？？如果是，那就把每个点到原点的距离算出来，放进hashmap里。
+在同一个园上，距离相等。
+
+
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 98.]

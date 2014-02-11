@@ -1,0 +1,66 @@
+发信人: city1000 (city1000), 信区: JobHunting
+标  题: 一道rocket fuel的题
+关键字: algorithm
+发信站: BBS 未名空间站 (Fri Jan 24 11:08:04 2014, 美东)
+
+这题是之前版上的面经，其实也是他家的codesprint 的一道题。
+原题见：
+http://get-that-job-at-google.blogspot.com/2013/02/rocketfuel-c
+
+一个deque，但是只支持pushBack，pushFront，popBack， 没有popFront
+给一个1-N的排列，问能否把1-N按照从小到大的顺序push到deque，pop的时机可以任选
+，使得pop出的顺序刚好是给定的排列
+比如： 给定 23145， 那么对12345对应的操作序列是pushBack，pushBack，popBack，
+pushBack，popBack，popBack，pushBack，popBack，pushBack，popBack
+要求如果可能，输出任意一个可能的操作序列，如果没有可能的操作序列，输出
+impossible
+
+下面是版上的一个大牛给出的答案，不过我太弱，完全无法理解大神的思路。。。求大
+家提供点思路~~
+
+//return operations, empty if impossible
+vector<string> getOps(string seq) {
+    int last = -1, pushCount = 0, N = (int)seq.length();
+    vector<string> v(2*N, "");
+    for (int i = 0; i < N; ++i) {
+        int index = seq[i] - '0';
+        ++last;
+        if (index > pushCount) {
+            if (pushCount + 1 <= index - 1) {
+                int head = i + 1, tail = N - 1;
+                for (int j = index - 1; j >= pushCount + 1; --j) {
+                    int pos = last + j - pushCount - 1;
+                    while (head < N && seq[head] - '0' > index)
+                        ++head;
+                    while (tail >= 0 && seq[tail] - '0' > index)
+                        --tail;
+                    if (head == N || tail < 0) {
+                        v.clear();
+                        return v;
+                    }
+                    if (seq[head] - '0' == j) {
+                        v[pos] = "pushBack";
+                        ++head;
+                    }
+                    else if (seq[tail] - '0' == j) {
+                        v[pos] = "pushFront";
+                        --tail;
+                    }
+                    else {
+                        v.clear();
+                        return v;
+                    }
+                }
+            }
+            last += index - pushCount;
+            pushCount = index;
+            v[last - 1] = "pushBack";
+        }
+        v[last] = "POPBACK";
+    }
+    return v;
+}
+
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 98.]

@@ -1,0 +1,27 @@
+发信人: smilenceyu (smilence), 信区: JobHunting
+标  题: 一个rocketfuel的题
+发信站: BBS 未名空间站 (Tue Nov  5 00:25:04 2013, 美东)
+
+AND(OR(a,b),OR(c,d))
+
+像这样一个逻辑表达式，输出成树的样子，
+
+AND
+|
++-OR
+| |
+| +-a
+| |
+| +-b
+|
++-OR
+|
++-c
+|
++-d
+
+我只想问，怎么把OR(a,b)和OR(c,d)分割开，因为那样的话，就可以分别递归了
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 71.]
+

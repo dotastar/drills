@@ -1,0 +1,14 @@
+发信人: flynewdream (fly), 信区: JobHunting
+标  题: 请教一道rocket fuel DP题
+发信站: BBS 未名空间站 (Sun Jun 23 20:12:05 2013, 美东)
+
+如何做？
+
+大牛贴过了这题，我怕被大家的讨论淹没了，单独把他列出来。这题好像是
+Introduction to algorithm的一道课后题。
+
+(2)给一张L*W的纸，给一堆 l(i)* w(i)的模板，每个size的模板有各自的price p(i)
+，求这张纸所能剪出的最大值。
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 24.]

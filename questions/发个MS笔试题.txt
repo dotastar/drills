@@ -1,0 +1,16 @@
+发信人: itworker (无脚鸟), 信区: JobHunting
+标  题: 发个MS笔试题
+发信站: BBS 未名空间站 (Fri Feb  7 00:49:12 2014, 美东)
+
+近期的Online Technical Screen
+3题，一小时
+1. 函数debug，remove head from linked list
+2. OO设计，电梯
+3. 用伪代码写一个多线程的程序，模拟打印机处理。假设打印文件有三个来源：网络
+，本地和USB接口
+
+
+--
+
+※ 修改:·itworker 於 Feb  7 00:49:24 2014 修改本文·[FROM: 50.]
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 50.]

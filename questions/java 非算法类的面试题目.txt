@@ -1,0 +1,51 @@
+发信人: newyorker012 (纽约walker), 信区: JobHunting
+标  题: java 非算法类的面试题目
+发信站: BBS 未名空间站 (Tue Feb  4 17:57:29 2014, 美东)
+
+非算法类的面试题目哪里看面经？求大家帮忙。
+
+--
+
+※ 修改:·newyorker012 於 Feb  4 17:57:52 2014 修改本文·[FROM: 66.]
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 66.]
+ 	
+
+
+发信人: goodbai (八段锦), 信区: JobHunting
+标  题: Re: java 非算法类的面试题目
+发信站: BBS 未名空间站 (Tue Feb  4 18:25:23 2014, 美东)
+
+我是用这个复习的：
+http://www.developersbook.com/corejava/interview-questions/core
+
+good luck！
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 146.]
+ 
+
+发信人: newyorker012 (纽约walker), 信区: JobHunting
+标  题: Re: java 非算法类的面试题目
+发信站: BBS 未名空间站 (Tue Feb  4 23:26:59 2014, 美东)
+
+谢谢goodbai。我也共享下我自己的资源。
+
+http://searchjava.blogspot.com/
+
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 66.]
+
+
+发信人: ryanlr (cheng), 信区: JobHunting
+标  题: Re: java 非算法类的面试题目
+发信站: BBS 未名空间站 (Sun Feb  9 20:24:29 2014, 美东)
+
+Java常见的问题. 关于Java的，访问量最大的个人博客之一。
+
+http://www.programcreek.com/simple-java/
+
+--
+
+※ 修改:·ryanlr 於 Feb  9 20:31:26 2014 修改本文·[FROM: 71.]
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 71.]

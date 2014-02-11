@@ -1,0 +1,29 @@
+发信人: adsd (adsd), 信区: JobHunting
+标  题: g电面
+发信站: BBS 未名空间站 (Tue Jan 14 18:49:08 2014, 美东)
+
+肯定跪了。
+interface RateLimit {
+    /** Sets the rate, from 1 to 1000000 queries per second */
+    void setQPS(int qps);
+
+    /** accept or reject a request, called when request is received */
+    boolean allowThisRequest();
+}
+
+brief example:
+server instantiates your object, calls setQPS(1)
+at at time t, user1 makes a request, allowThisRequest() returns true
+at time t+0.01 sec, user2 makes a request, allowThisRequest() returns false
+at at time t+1, user4 makes a request, allowThisRequest() returns true
+at time t+5 sec, user3 makes a request, allowThisRequest() returns true
+写个class implement这个接口
+
+String encode(List<String> input);
+List<String> decode(String input);
+各位大神能给点好的思路不？
+谢谢
+
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 98.]

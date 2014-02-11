@@ -1,0 +1,17 @@
+发信人: qianquan (qianquan), 信区: JobHunting
+标  题: 发个g的电面
+发信站: BBS 未名空间站 (Sun Feb  2 00:05:08 2014, 美东)
+
+上周面的，答得超级不好，估计跪了，发题攒下人品。。
+1. implement java iterator interface
+input : 11223344
+output : 1223334444 （类似于count & say那题) 由于对iterator不熟直接跪掉
+
+2. 
+how to find median from 2 sorted array
+then ask
+how to find median from k sorted array...
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 169.]
+

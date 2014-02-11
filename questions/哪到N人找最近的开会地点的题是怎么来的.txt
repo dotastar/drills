@@ -1,0 +1,23 @@
+发信人: lightsaber (lightsaber), 信区: JobHunting
+标  题: 哪到 N 人找最近的开会地点的题是怎么来的?
+发信站: BBS 未名空间站 (Mon Feb 10 00:07:29 2014, 美东)
+
+忽然想起, 但记不清楚了. 
+大概是在平面上, 有N 个人的家. 到其中的一个人家开会, 要求所有的人走的路线和最
+小. 问如何选这个人. 好象最好的方法是O(N). 
+
+有人有具体的问题和答案吗? 
+
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 24.]
+ 	
+
+发信人: walkingmetro (walkingmetro), 信区: JobHunting
+标  题: Re: 哪到 N 人找最近的开会地点的题是怎么来的?
+发信站: BBS 未名空间站 (Mon Feb 10 18:43:58 2014, 美东)
+
+http://stackoverflow.com/questions/7154978/shortest-distance-tr
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 143.]

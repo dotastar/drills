@@ -1,0 +1,25 @@
+发信人: haidafu (海大富), 信区: JobHunting
+标  题: 树遍历的考点小结
+发信站: BBS 未名空间站 (Wed Feb  5 13:30:43 2014, 美东)
+
+多位网友发过了，比如ultrabo，小节一下考点
+
+     A
+   /   
+  B     C
+
+共六种排列 (要求): inorder, preorder, postorder, inorder right first (CAB), 
+preorder right first (ACB), postorder right first (CBA)
+
+
+实现技术：recursive, iterative with one stack, iterative with two stacks, 
+iterative with parent pointer but no stacks, iterative with threaded binary 
+trees, Morris traversal (dynamic threaded tree)
+
+做一个表，行是六种要求，列是各种技术，一共多少啊？还有没想到的吧。
+
+
+Morris traversal codes: http://www.cnblogs.com/AnnieKim/archive/2013/06/15/MorrisTraversal.html
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 169.]

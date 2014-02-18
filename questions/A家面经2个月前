@@ -1,0 +1,110 @@
+发信人: hendry (hendry), 信区: JobHunting
+标  题: A家面经
+发信站: BBS 未名空间站 (Sun Sep 29 23:17:52 2013, 美东)
+
+2个月前面的, 现在来攒攒人品
+电面(45分钟, 前3题描述算法就行, 只有最后一题写code)
+1. from 1 to N one number appear twice, others once, find that number, (how 
+about two numbers? 500 numbers appear twice?)
+2. a billion number, find K smallest numbers . 面试官居然不知道不fit memory
+也可以linear搞定, 真汗  
+3. how DNS return IP lookup request.
+4. write atoi, allow input 1200.00, not 1200.01, can you handle -2^31? if 
+not, how to fix it?
+
+onsite
+1. 一个矩阵, 把所有非0元素按connected component分组打印出来, 4-neighbors算连通
+2. thesis presentation
+3. design spreadsheet, 每个单元格可以是int, 可以是对其他单元格的引用, 可以是
+算术表达式, 加减乘除, 表达式中可以有对其他单元格的引用, 要能把值求出来, 这题
+居然是lunch interview, 真啃爹, 饭都没吃完
+4. design chess game, 人机对战
+5. print matrix in spiral order. 这个简单, 但是follow up搞不定, how to 
+minimize cache misses when you go downward and upward?
+6. leetcode, jump game II
+onsite六轮面试之间连break都没有
+
+BTW: 因为根本没有网申阿妈总, 本来以为是2月份campus job fair投的, 结果一看他
+们手里的简历才知道, 2011年2月找实习的时候投的...
+
+
+--
+
+※ 修改:·hendry 於 Sep 30 17:32:50 2013 修改本文·[FROM: 76.]
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 76.]
+
+
+
+
+发信人: hendry (hendry), 信区: JobHunting
+标  题: Re: A家面经
+发信站: BBS 未名空间站 (Sun Sep 29 23:57:25 2013, 美东)
+
+double find_kth_largest_unknown_length(istringstream &sin, int k)
+{
+    vector<double> vec;
+    double x;
+    while (sin >> x)
+    {
+        vec.emplace_back(x);
+        if (vec.size() == (k << 1) - 1)
+        {
+            nth_element(vec.begin(), vec.begin() + k - 1, vec.end(), greater
+<double>());
+            vec.resize(k);
+        }
+    }
+    nth_element(vec.begin(), vec.begin()+k-1, vec.end(), greater<double>());
+    return vec[k-1];
+}
+
+
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 76.]
+
+
+
+发信人: seecloud (seecloud), 信区: JobHunting
+标  题: Re: A家面经
+发信站: BBS 未名空间站 (Sun Feb 16 22:44:40 2014, 美东)
+
+也要面A，不是Apple，攒人品
+
+#define N 1000
+// 多少个重复的都可以
+#define DU 7  
+int _tmain(int argc, _TCHAR* argv[])
+{
+    vector<int> v;
+    int i,j;
+    for(i = 0; i<=N; i++)
+        v.push_back(i); 
+    for(i = 0; i<=DU; i++)
+        v.push_back(i); 
+    random_shuffle(v.begin(), v.end());
+    copy(v.begin(), v.end(), ostream_iterator<int>(std::cout, " "));
+    cout<<endl<<endl;
+
+    for(i=0;i<v.size();i++)
+    {
+        while(v[i] != i && v[v[i]] != v[i])
+            swap(v[i], v[v[i]]);
+    }
+
+    copy(v.begin()+N+1, v.end(), ostream_iterator<int>(std::cout, " "));
+    cout<<endl;
+    return 0;
+}
+
+关键就是
+for(i=0;i<v.size();i++)
+    {
+        while(v[i] != i && v[v[i]] != v[i])
+            swap(v[i], v[v[i]]);
+    }
+
+--
+
+※ 修改:·seecloud 於 Feb 16 22:46:41 2014 修改本文·[FROM: 203.]
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 203.]

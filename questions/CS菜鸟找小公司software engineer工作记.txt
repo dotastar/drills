@@ -1,0 +1,1006 @@
+发信人: diketene (呆客厅), 信区: Northcounty
+标  题: CS菜鸟找小公司software engineer工作记 (ZT)
+发信站: BBS 未名空间站 (Thu Jan 24 10:49:44 2013, 美东)
+
+发信人: DrunkMonkey (努力改造，早日释放), 信区: JobHunting
+标  题: CS菜鸟找小公司software engineer工作记
+发信站: BBS 未名空间站 (Sun Mar 13 19:20:08 2011, 美东)
+
+首先解释一下自己的背景和找工作的目标。本人烂校CS Ph.D.毕业，Ph.D.期间无工作
+经验，无Intern经验。目标是在local找一份工作，不求A,M,G，不求高薪，只要能给
+offer给办H1B就行。
+
+先说说找工作的过程吧：2010年11月开始断断续续的看CRLS。虽然以前上过数据结构和
+算法课，不过都快忘光了，基本上是从头学一遍。2011年1月底投出第一份简历。上周
+拿到一个offer。还有一个onsite结束后面试官说我是目前的candidate里最好的，很可
+能会给offer，但是要等到下周中才有结果。
+第一个公司催的紧，而且地理位置很理想，也是我想要的职位，打算从了。花了一个半
+月找工作，终于可以划下句号了。
+
+以菜鸟的状态进入本版，这期间得到了版上的很多帮助和
+BLESS。谢谢！
+找工作的过程中有喜有忧，也有一点小小的心得，和大家分享。希望能对仍在找工作的
+同学有点帮助。
+
+先说说我觉得非常有用的资源:
+1. 找工作的网站
+我把简历放在monster, dice上，另外每天看看indeed。找工作期间一共投了42份简历
+，其中一半在monster, dice这样的网站上投，另一半是通过indeed看到，直接email到
+公司去的。
+monster作用不大，联系我的都是些recruiter。
+indeed非常有用。从indeed上看到职位以后，我去该公司的网站，找到HR部门的收件地
+址(通常是careers@company.com,或者jobs@company.com)，然后给该email地址发简历
+。22份简历，拿到了3个phone interview，其中两个拿到了onsite，另一个莫名其妙的
+在HR那关被灭。
+总结：强烈推荐indeed!
+
+2. 简历
+简历这块儿没什么可说的，精华区里有很多讨论。
+强烈推荐某位大牛的博客，也是在这个版上看到的(不知道这位筒子会不会看到这个帖
+子。对你表示暴烈的感谢！)：
+http://randommumble.wordpress.com/
+里面给出的cover letter格式，非常有用。我不管公司要不要cover letter，一律按照
+这位筒子给的格式写一份。一个manager level的朋友看到以后说，非常impressive.另
+外，简历命名规则，也很管用。至少我自己查找以前投的简历就方便多了。
+
+以我自己为例来推荐一下cover letter吧。我把简历和cover letter贴在monster上以
+后，A家和M家都是第二天第三天联系我，G家是过了一周联系我(向毛主席保证，我没有
+投这几家！)
+A家的phone interview fail了，在本版贴过面经。
+M家联系我的时候，我在外地开会，和他们说好一周以后联系。等我回来再给他们写信
+，就没人理我了，不知道怎么回事。
+G家HR说希望我在他们网站上再申请一次，然后安排面试。我算法没怎么复习，就还没
+投。
+
+总结：cover letter啊cover letter！！！！！
+(补充：cover letter的作用，就像randommumble筒子在他的blog里说的那样，可以帮
+你顺利通过HR那关。不过回帖中也有很多筒子说没啥用)
+
+得色的楼主又想起来一点：不知道resume怎么写的吸引人的同学，可以google别人的简
+历。比如做machine learning的，就google "machine learning google"，可以查到学
+machine learning的拿到google offer的牛人们的简历。说不定有帮助。
+牛人们的简历通常是这么写的：designed XXXX 系统，用了xxx和xxx听起来巨fancy的
+技术，性能提高了x%。不纠缠于技术细节，而牛掰性又显而易见。 
+
+3. 面试准备
+版上大家都说，不打没把握的仗。如果mitbbs版面总结还有10%以上题(有的说法是20%)
+不会或者写代码会有错，面试就是浪费机会。
+我进这个版的时候，大概95%的题不会做。现在超过一半的题还是不会，特别是算法题。
+如果你要找的是M,G,A这样的大公司，确实需要做很多题，练熟了再去。
+如果只求找份工作，我自己的经验是小公司不那么看重算法。基本概念会，有一定的编
+程经验，就可以了。需要准备以下的部分：
+
+a. careercup 150题, 和programming interview exposed
+前者尤其重要，不管多强调它的重要性都不过分。后者的每道题都必须做的很熟练。
+另外，看careercup的时候，最好能扩展一下。比如smart pointer，career cup上给出
+了它的实现；可以扩展到现在C++里有几种smart pointer(auto_ptr, shared_ptr，区
+别和应用, etc)。
+
+b. effective c++
+这本书很多人说很好，但是我看不进去。推荐下面这两个链接：
+C faq: http://c-faq.com/
+C++ faq: http://www.parashift.com/c++-faq-lite/
+把这两个链接看完，C/C++的各种考题都能应付
+
+c. design pattern
+常问的是singleton, factory。有的时候会问MVC, strategy
+我还会主动说一个std::iterator
+wikipedia的内容足够应付面试了
+
+d. multi-thread
+看programming interview exposed，careercup, wikipedia
+
+e. STL基本概念
+推荐the c++ standard library，看auto_ptr和第五章(google book上有)
+或者随便找个stl的slides看一遍就够了
+
+f. 面试前的临时抱佛脚
+* 最简捷有效的资源：wikipedia
+面试前，我会把这个职位的招聘广告翻出来，job description和requirements里所有
+不熟悉的技术都wiki一遍。
+面试的时候，如果面试官问到这个问题，就说：我虽然没有做过这方面的项目，但是对
+这个技术也有所了解.blah blah blah的把wiki背一遍。或者去搜一下这个领域相关的
+新闻。比如做machine learning的人，我就会和他侃一下IBM的watson最近在jeoparty
+上的表现。
+* onsite之前一般都有一段时间可以充分准备一下。我会去youtube搜相关的教程恶补
+，或者干脆在google上找slide。
+比如，要面ORACLE的话(打个比方)，可以去youtube搜一遍oracle教程。或者在google
+里搜oracel database .ppt。
+* 恶补面试题
+记得careercup开篇说过，即使是牛人，如果不了解面试题目的风格，也可能会fail。
+哪怕是面自己非常熟悉天天在用的技术，也建议先看看面试题。
+最好的资源当然是careercup和本版。
+另外，可以去glassdoor.com看到以往的面试题。
+如果公司很小，在glassdoor上没有面试题的话，建议查查类似公司的面经。比如要面
+淘宝，就可以看看ebay的面经，没准差不多。
+或者直接搜关键词，比如面oracle，搜database interview questions，说不定也有用
+。我曾经前一天晚上刚看的题，第二天就被面到了。
+
+g. 算法题
+推荐两个网站，一个是在这个版上看到的，一个是朋友推荐的：
+http://www.ihas1337code.com/
+和
+http://geeksforgeeks.org/
+当然还有mitbbs精华区和版面讨论
+
+
+4. local的优势：
+我的目标是在local找工作(非湾区)，定位为找小公司的职位。
+小公司比较愿意招local的人。常常看到招聘广告上说，local resident preferred。
+而local resident candidate往往不太强。曾经有一个面试官对
+于我能快快写出无bug的reverse a sentence程序表示惊奇，因为之前的candidate都败
+在这题之下。要知道，我的水平在这个版上就属于被秒灭的那种啊！可以想象其他
+candidate的水平了吧...
+
+建议：把自己的地址改成bay area吧，机会应该会多很多。
+
+
+5. 心态
+找工作中也有不少教训，和大家共勉：
+不要因为一次的失败而否定自己。
+不要等。面完了，继续投简历，继续面其他家。不要像我似的，什么都不做，天天煎熬
+的等待结果。如果面完了继续move on，也许我现在手上可以有更好的offer.
+
+最后再次谢谢这个版那么多热心的ID们！
+祝大家都拿到满意的offer!
+
+又想起来一点，补充一下：
+
+我的感觉是，面试有两种，一种是“算法类”(A,M,G这样的大公司)，一种是"概念类"
+，考基础概念，小公司比较多。
+算法类不清楚。对于“概念类”来说，考点就那么多，记住一个算一个。像我这样半路
+转到CS，很多基础课都没上过的人，面试的时候考的其实是背功，或者考你运气好不好
+，之前有没有见过这题。
+比如，我被问过一道题，delete[]是怎么知道需要delete的size大小的。刚好前一天在
+C++ FAQ里看过这题，知道new class[]的时候，内存里第一位放的是object个数，后面
+才是new的内容。如果没见过这题，打死我也答不出来啊。
+
+相信大家都考过GRE。GRE背单词的策略就是第一天，第二天，第四天，第八天... 反正
+就是不停的复习
+我准备面试的时候用的是类似的方法。所有的"考点"，比如概念，经典题的算法，记在
+一个本子上(最后攒了若干个本子)。平时每天晚上睡觉前翻一点，早上起来翻一点。常
+看常背，考点记的比较牢。
+以前也常拿这个方法来期末突击复习，应付考试，很有效的 
+
+--
+
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 76.]
+ 	
+
+
+发信人: DrunkMonkey (努力改造，早日释放), 信区: JobHunting
+标  题: Re: CS菜鸟找software engineer工作记
+发信站: BBS 未名空间站 (Sun Mar 13 19:38:39 2011, 美东)
+
+继续...
+
+3. 面试准备
+版上大家都说，不打没把握的仗。如果mitbbs版面总结还有10%以上题(有的说法是20%)
+不会或者写代码会有错，面试就是浪费机会。
+我进这个版的时候，大概95%的题不会做。现在大概90%的题不会，算法题基本上都不会。
+如果你要找的是M,G,A这样的大公司，确实需要做很多题，练熟了再去。
+如果只求找份工作，我自己的经验是小公司不那么看重算法。基本概念会，有一定的编
+程经验，就可以了。需要准备以下的部分：
+
+a. careercup 150题, 和programming interview exposed
+前者尤其重要，不管多强调它的重要性都不过分。后者的每道题都必须做的很熟练。
+另外，看careercup的时候，最好能扩展一下。比如smart pointer，career cup上给出
+了它的实现；就可以扩展到现在C++里有几种smart pointer(auto_ptr, shared_ptr，
+区别和应用, etc)。
+
+b. effective c++
+这本书很多人说很好，但是我看不进去。推荐下面这两个链接：
+C faq: http://c-faq.com/
+C++ faq: http://www.parashift.com/c++-faq-lite/
+把这两个链接看完，C/C++的各种考题都能应付
+
+c. design pattern
+常问的是singleton, factory。有的时候会问MVC, strategy
+我还会主动说一个std::iterator
+wikipedia的内容足够应付面试了
+
+d. multi-thread
+看programming interview exposed， careercup, wikipedia
+
+e. STL基本概念
+推荐the c++ standard library，看auto_ptr和第五章
+
+f. 面试前的临时抱佛脚
+* 最简捷有效的资源：wikipedia
+面试前，会把这个职位的招聘广告翻出来，所有不熟悉的技术都wiki一遍。
+面试的时候，如果面试官问到这个问题，就说：我虽然没有做过这方面的项目，但是对
+这个技术也有所了解.blah blah blah的把wiki背一遍。
+* onsite之前一般都有一段时间可以充分准备一下。我会去youtube搜相关的教程恶补
+，或者干脆在google上找slide。
+比如，要面ORACLE的话(打个比方)，可以去youtube搜一遍oracle教程。或者在google
+里搜oracel database .ppt。
+* 恶补面试题
+最好的资源当然是careercup和本版。
+另外，可以去glassdoor.com看到以往的面试题。
+如果公司很小，在glassdoor上没有面试题的话，建议查查类似公司的面经。比如要面
+淘宝，就可以看看ebay的面经，没准差不多。
+或者直接搜关键词，比如面oracle，搜database interview questions，说不定也有用
+。我曾经前一天晚上刚看的题，第二天就被面到了。
+
+g. 算法题
+推荐两个网站，一个是在这个版上看到的，一个是朋友推荐的：
+http://www.ihas1337code.com/
+和
+http://geeksforgeeks.org/
+当然还有mitbbs精华区和版面讨论
+
+
+--
+
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 76.]
+ 
+
+发信人: diketene (呆客厅), 信区: Northcounty
+标  题: Re: CS菜鸟找小公司software engineer工作记 (ZT)
+发信站: BBS 未名空间站 (Sat Jan 26 12:59:04 2013, 美东)
+
+发信人: DrunkMonkey (努力改造，早日释放), 信区: JobHunting
+标  题: Re: CS菜鸟找software engineer工作记
+发信站: BBS 未名空间站 (Sun Mar 13 19:49:14 2011, 美东)
+
+1. local的优势：
+我的目标是在local找工作(非湾区)，定位为找小公司的职位。
+小公司比较愿意招local的人。常常看到招聘广告上说，local resident preferred。
+而local resident candidate往往不太强。曾经有一个面试官对
+于我能快快写出无bug的reverse a sentence程序表示惊奇，因为之前的candidate都败
+在这题之下。要知道，我的水平在这个版上就属于被秒灭的那种啊！可以想象其他
+candidate的水平了吧...
+
+建议：把自己的地址改成bay area吧，机会应该会多很多。
+
+
+2. 心态
+找工作中也有不少教训，和大家共勉：
+不要因为一次的失败而否定自己。
+不要等。面完了，继续投简历，继续面其他家。不要像我似的，什么都不做，天天煎熬
+的等待结果。如果面完了继续move on，也许我现在手上可以有更好的offer.
+
+最后再次谢谢这个版那么多热心的ID们！
+祝大家都拿到满意的offer!
+
+又想起来一点，补充一下：
+相信大家都考过GRE。GRE背单词的策略就是第一天，第二天，第四天，第八天... 反正
+就是不停的复习
+我准备面试的时候用的是类似的方法。所有的"考点"，比如概念，经典题的算法，记在
+一个本子上(最后攒了若干个本子)。平时每天晚上睡觉前翻一点，早上起来翻一点。常
+看常背，考点记的比较牢。
+以前也常拿这个方法来期末突击复习，应付考试，很有效的 
+
+
+
+--
+
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 76.]
+ 
+
+发信人: diketene (呆客厅), 信区: Northcounty
+标  题: Re: CS菜鸟找小公司software engineer工作记 (ZT)
+发信站: BBS 未名空间站 (Sat Jan 26 13:08:08 2013, 美东)
+
+From Random Mumble's Blog:
+http://randommumble.wordpress.com/
+
+
+关于找工作（〇 前言） 06月 10, 2010 
+Posted by randommumble in job hunting. 
+add a comment 
+==== 此文原发于mitbbs的jobhunting版。我的原创，并非转载。 ====
+
+先声明一下，纯属个人经验，不负法律责任的啊 — 开玩笑了，当然不会故意误导的。
+会不会是象国内的某些记者一样，拿着不知道哪儿捡来的破烂当宝贝？有这个可能，但
+是可能性不大。至少不会是故意编瞎话骗人。
+
+说起来是有不少经验/想法的，估计一次也说不完，想到哪儿说到哪儿吧。按老美的习
+惯，先给个提纲（agenda)：
+1. 简历
+2. cover letter （对不起，实在不知道中文怎么说。丢人啊，邯郸学步的当代版）
+3. 面试
+4. 找工作期间（有点倒叙了。原因以后解释 — 怕挨砖）。
+
+按照老美的习惯，讲正题前先跑题 — 背景知识（background).
+
+（谁在扔鸡蛋？在老美的地头混，不学老美的门路，怎么去和老美斗？）
+
+俺的“理论”可是科班，去老美的一个帮助找工作(outplacement, career placement)
+的公司，认认真真学来的。当然了，学习班里什么样的人都有，教练教的要顾及多数人
+，很多和俺的工程师背景不适用，所以俺也就基本上是左耳进右耳出了。有些有印象的
+，还是会提一提的，毕竟不是所有人都是工程师。
+
+
+
+关于找工作（一 简历【之一】） 06月 10, 2010 
+Posted by randommumble in job hunting. 
+add a comment 
+==== 此文原发于mitbbs的jobhunting版。我的原创，并非转载。 ====
+
+首先澄清一下，resume 和CV都是简历，名字不同，用处不同，写法也不一样。各位（
+特别是离开学校不太久的）先看一看自己的简历，是不是既可以当resume用，也可以当
+cv用？或者你根本分不清这两个有什么区别？如果答案是是的话，恭喜你，你找工作的
+第一个大障碍已经找到了。现在可以把你的简历扔到垃圾桶里了。
+
+那么，resume和cv有什么区别？要总结出区别，挺不容易说清楚的。从用处上说吧，如
+果你要找工业界的工作，你需要resume； 如果找学校，国家实验室的科研工作，你需
+要cv。 那么如果是工业界的研发呢？多数情况下，你需要resume。（我其实想说绝大
+多数情况下的，怕有人鄙视我 — 你才见过多少世面？）
+
+明确了这个，俺就讲一讲resume的写法吧。
+
+resume第一个要求：短。一页纸最好，不过估计大家都是经验累累，成绩硕硕的，一页
+纸大概不够。那就两页吧，不过主要内容要在第一页上。什么？两页还不够，您老人家
+实在是比俺还唐僧。那些自我评定留着到面试时和老美/老印昏天黑地地胡侃再用吧。
+
+为什么要短？因为有调查，绝大多数的简历是先被人事部(Human Resource, HR)的审核
+。又有调查，HR平均只花20秒看一份简历。您老人家的简历那么长，就算有拿诺贝尔奖
+的实力，HR的人有时间看么？（且不说他/她能不能看懂）。更何况，他/她把你这么优
+秀的候选人（candidate)错误地毙掉了，他/她会有什么损失吗？
+
+长度限制住了，字体呢？俺的一点小诀窍：如果你是用word之类的软件准备的resume (
+这点后面会讲）， 先把字体换了。大家都用一样的sans serif，HR的人也会审美疲劳
+不是。用什么字体，有一个不二之选：Garamond. 为什么？先把你的换了，你就知道为
+什么了。
+
+附带声明，Garamond （其实是一个修正版的）在苹果的地位相当于MS sans serif 在
+微软的地位。俺不是果轮，不过喜欢苹果的MacOS/OSX胜过喜欢微软的windows倒是事实。
+
+其实还有一个技术原因：有一些公司用OCR（又邯郸学步了），Garamond一定会兼容，
+别的字体不一定。– 还是那个老问题，如果HR的人要多在你的简历上费工夫（而且不
+是一点半点–你能指望HR的人计算机玩的多溜？），你自己掂量一下你的机会吧。
+
+字体有了，大小呢？间距呢？正文大小以11号为宜，实在紧张用10号。再小了费眼，大
+了吓人。一段的标题（section titles)用12号，你的名字用14号。间距是单行就行，
+但是段与段之间一定要空行，而且每段不要超过4行。同样的原则，不能累着HR的先生/
+小姐/叔叔/阿姨/。。。
+
+
+
+
+关于找工作（一 简历【之二】） 06月 10, 2010 
+Posted by randommumble in job hunting. 
+add a comment 
+==== 此文原发于mitbbs的jobhunting版。我的原创，并非转载。 ====
+
+要写resume，得用软件吧。基本上只有一个选择：office (word) 2003。有人会说了，
+那破玩意，早淘汰了。我用office 2007/2010， openoffice, latex, 等等等等，或者
+我保存为pdf。我的意见：word 是烂，但没办法。为什么？
+
+1. 很多公司还在用office 2003，不是因为没钱，而是公司的软件通常都要落后一些。
+想想吧，一个公司至少几十台机器，赶潮流升级了，出了虫子(bug)不得把IT的人累死
+？office 2007的文件也许能用office 2003打开（得安装一个程序包），但你愿意不愿
+意用你的工作机会去试一试？有一点基本可以保证，如果HR的人打不开你的文件，哪怕
+坐他/她旁边的人能毫不费力的打开，你的机会也差不多到头了。
+
+2. 很多公司存电子文件，只接受.doc文件。
+
+3. 很多时候（特别是通过recruiter的时候），他们要修改一下你的简历的，最常见的是
+删去你的通信方式。原因不一，比如避免公司绕过recruiter直接去和候选人谈（这样
+recruiter就赚不到钱了）， 或者公司的规定（避免地域歧视）。
+
+
+
+关于找工作（一 简历 【之三】） 06月 10, 2010 
+Posted by randommumble in job hunting. 
+1 comment so far 
+==== 此文原发于mitbbs的jobhunting版。我的原创，并非转载。 ====
+
+下面开始详细解释resume的写法。请参考(随机找来的）样板 — google image 搜索”
+resume sample”，第一个结果，http://www.resume-resource.com/exleg3.html。 我们只用格式，不用它的内容。
+
+1. 名字：
+
+14号字， 全大写，第一个字母大一些（不是你手动调大的，word里格式选all capital
+，你原来大写的字母会比原来是小写的个头大一些）。
+
+如果你的名老美很难念（是念不出来，念得准不准没关系，你知道是找你的就行），可
+以加一个英文名，用引号括起来。比如，ZUXIE “SOCCER” QU。 加引号是告诉他们那
+部分在正式文件里是没有的,免得HR的人用你的”全名“去调查，调查出一个”查无此
+人“。
+
+名字后面加不加头衔（PH.D., MBA, RN什么的），取决于要申请的位置有没有明确要求
+某一个学位。通常说起来，加不加都一般没什么大问题,但以不加更保险一些。
+
+名字的下面（样板里地址的地方），如果你有绿卡/公民，可以写上（11号字, 斜体，
+可能需要bold）”US Permanent Resident” /“US Citizen”。当然如果您老人家已
+经把名字改了，就不必了。
+
+（不是哪个学校有位中国人教授就给自己起了一个完全美式的名字？–以前看到的，细
+节不记得了。谁给考考古？）
+
+2. 下一行，电话，地址，email：
+
+11号字，照抄样板的格式就行。 注意”telephone”, ”address”, “email” 这些
+词完全不出现，因为谁也不会把niuren@hotmail.com当成电话号码。
+
+电话建议留8AM-6PM开机的手机。如果你的手机比较忙（朋友多，或者忙着谈恋爱），
+建议去搞一个prepaid的。个人推荐， 如果可以找到闲置的verizon的手机，所在地
+verizon的信号也好的话，买pagepluscellular的卡（号），价格便宜量又足。强烈不
+建议买verizon或者ATT的prepaid （太贵）。
+
+email建议用私人的（gmail之类）。新申请一个专门用来找工作比较好。你如果是在用
+gmail （web interface)，可以设置自动去取别的新开的信箱的信，这样就不用换来换
+去了。
+
+地址用家庭地址，强烈不建议用工作/学校的地址。如果不想列出具体的门牌号，可以
+去邮局租一个信箱，没多少钱的。和手机，email一样，专门用来找工作，比较容易管
+理。
+
+3.下一行，一条贯穿文本宽度的线 ，单的双的都可以。怎么搞出来？google is your 
+friend.
+
+
+
+关于找工作（一 简历 【之四】） 06月 12, 2010 
+Posted by randommumble in job hunting. 
+add a comment 
+==== 此文原发于mitbbs的jobhunting版。我的原创，并非转载。 ====
+
+最重要的一块来了，睡觉的同学醒一醒。
+
+4. 下面是正文了。第一块： qualification，但是不要标题行(样板里的 “
+QUALIFICATION”）。 为什么？脱裤子放P，浪费宝贵的空间。更重要的是，HR的人要
+多看一行没用的东东。这一段怎么写？说难也难，说容易也容易，因为基本上是八股文。
+
+有同学问了：objective一段哪儿去了？答案很简单，不需要。因为也是脱裤子放P的事
+（后面讲到cover letter的时候会讲如何放这个P。  cover letter会在resume的前面
+，所以resume就不需要再重复了。– 以老美的唐僧风格，这实在是难得。）有一个HR
+的 VP（老美）告诉我，有objective的简历，或者出自在校学生之手，或者是古董级的
+简历。不管是哪个，都反映了简历的作者对自己职业发展及其重要的文档都没下够工夫
+。”The objective  section  has  been  unnecessary  for  at  least  ten  
+years.  Having it in the resume does nothing more than leaving a somewhat 
+negative impression.”
+
+那么qualification这一块到底怎么写呢？给个样板（独家产品，转载请付版税）：
+
+第一句：先把招工广告上的职位（比如，senior nuclear engineer) 抄上。在前面加
+上“评价”自己的褒义词。什么褒义词？什么好听说什么，experienced (这个慎重，
+不是不好，而是因为后面还要经常用experience这个词，会“撞车”，读起来不顺），
+motived,  diligent,  proven, 等等， 自己网上找吧。然后，
+后面加 with 100 years of experience in nuclear bomb making之类的自我吹嘘， 
+具体语言请参照老印的简历 – 瞧不起老印？人家老印绝对是这方面的专家。
+细心的会注意到这不是一句话，只是一个短语。对了，要的就是短语。后面几句也是。
+
+第二句，第三句，甚至第四句，全都差不多，注意和招工广告对应上。给个例子：
+excellent hands-on skills building an atomic bomb from dog poo.
+
+要点有三：1. 要敢于给自已客观的，正确的，不谦虚的评价。怎么样才算合格？这么
+说吧，只要没说“地球离了我不转”都不算太过分。2.长度要合适，总共四行，可以少
+一行，不可以多。即， 每一句都是控制在短于一行或者一行多一点点的长度。排版是
+要两头对齐。3. 要敢于用demonstrated, proven, exceptional 此类的形容词。
+
+从一定程度上讲，你能不能通过/混过HR这一关，一大半在这一段上面。你的目标是15
+秒之内把他/她忽悠晕。有一个简单的测试方法：找一个不太熟的人，最好也不懂你的
+专业，（朋友的朋友）让他/她看30秒你的简历，然后把简历收回来，开始问问题，看
+看他/她能对这一段的内容有多少印象。
+
+如果招工广告上有非常详细的要求（软件啦,仪器啦），可以跟上一个小列表（bullet 
+list)，三到四项。比如：50 years of solid experience operating dog-poop-
+scooping machines.
+
+又有人要问了：你总提招工广告，岂不是每个广告的写一份？？？我没说一份简历打天
+下吧。每个广告一份简历看起来挺罗嗦的，其实没什么。你只要能捣鼓出第一份，剩下
+的照猫画虎就是了。
+补充一点：关于评价自己：对学生而言，要强调well-trained, diligent/hard-
+working, proactive (不要直接用这个词，想办法表述出来你学习的风格不是老板指哪
+儿才打哪儿）， 以及wide range of knowledge （举个例子吧，如果你学的是机械， 
+可以强调你还懂材料，电子，甚至物理，化学，当然这些要和你的本行相关）。有工作
+经验的人，要强调这些方面：hands-on （特别是如果你的背景偏理论和数值），
+motivated, customer-driven, result-driven, versatile, team-work, leadership(
+如果找比较高的位置 — technical leadership也是leadership)。 hardworking/
+diligent就不用强调了。
+
+
+
+关于找工作（一 简历 【之五】） 06月 12, 2010 
+Posted by randommumble in job hunting. 
+add a comment 
+==== 此文原发于mitbbs的jobhunting版。我的原创，并非转载。 ====
+
+5. 下一块：EXPERIENCE。只要这个词就好了，样板里的PROFESSIONAL EXPERIENCE有脱
+裤子放P之嫌。有不是应召做男朋友/女朋友/老公/老婆/女婿/媳妇，谁关心你的
+PERSONAL EXPERIENCE?
+
+如果你是在校或者刚毕业的学生找工业界的工作，建议你把这一块放在EDUCATION的前
+面，除非你在学校里只上课，别的什么都没干。如果你已经有工作经验。。。没有商量
+的余地。
+
+EXPERIENCE (还有后面的EDUCATION)要按时间倒叙（最近的经历在最前面）。格式可以
+照抄样板的。基本上是这个样：
+
+职称（Nuclear Scientist), 11号字，斜体，黑体， 左对齐。
+另起一行，左对齐，公司/学校， 镇子， 州。比如， ATOMIC DOGPOO INC, Dogtown, 
+DG, 11号， 大小写照样板来。
+
+同一行，右对齐，开始-结束。 比如， 1900-Present. 只列年份就可以。
+
+有同学说了，俺的经验太牛，在一个公司被提升了5次，怎搞？答案：您的位置那么高
+了，还来听俺罗嗦，what’s wrong with you? –开玩笑的，别见怪。对你的情况，如
+果位置是类似的， 建议合并到一起。比如变成这样： Junior Nuclear Scientist (
+1900-1910), Senior Nuclear Scientist (1910 – 1950), Super-senior Nuclear 
+Scientist (1950 – present).
+
+之下的内容就有门道了，先留点悬念，请仔细研究样板里的EXPERIENCE有什么最大的特
+点？
+
+答案是– 每一条都是以动词开始的。其实样板并不很好，更好的应该是以动词的过去
+时开始，因为现在时可以理解成工作任务的描述，不代表你一定做过。
+
+用动词有什么意义？这得从简历的目的说起。公司看简历的目的是什么？一个非常非常
+重要的原因是看你过去做过什么。注意，关键词是“做过”， 不是“什么”。中国人
+习惯强调“什么”，因为做的怎么样是不言而喻的，谁愿意哪壶不开提哪壶啊？可是老
+美不一样，你不说自己做的好我怎么知道你做的好啊？（唐僧的传人）所以一定要强调
+”做过”（所以是过去时）。
+
+另一个要点（样板里体现的不好），要强调结果， 因为公司找你是要解决问题赚钱的
+。你做得再漂亮，不解决实际问题也没用。至于怎么做的，在面试前基本上没人关心。
+（等你去工作以后，就更没有人关心了）
+
+要点明确了，怎么做呢？和QUALIFICATION那段差不多，要用（老美的说法）“
+powerful keywords”。哪些算呢？developed, advanced, solved, improved, 
+reduced (cost), organized, led。 那些不算呢？worked (废话，你拿了公司/学校的
+钱，当然要干活了）， studied,  served, collaborated,  supported (除非你要找
+非常低的位置或者秘书之类的工作）， contributed(基本没用）。有点概念了没有？
+
+有同学反映了：我刚毕业没多久， 没什么好说的。其实工作过的很多人也一样（包括
+我），因为很多工作每天就是固定的程序 — 太新的东西不容易带来直接经济效益，而
+公司的第一目标是要赚钱的，所以稳定自然是第一位的了。我坚决反对无中生有（万一
+面试遇上明白人，你能拿到的工作也拿不到了），但是建议大家要学会从无聊的工作里
+找到闪光点。 对工作的人来说，这个工作给公司带来了什么效益（不一定是直接的金
+钱，当然如果是的话更好）。举个例子吧，也许你琢磨出来的小改进让一个零件的成本
+降低1毛钱（没什么吧），可是公司一年要生产1000万个，你就可以说reduced annual 
+cost by $1Million(厉害不？），或者产量只有10个，可是原来的成本是4毛，你可是
+reduced cost of the critical part by 25% (那个零件到底是不是critical， 谁能
+核实？）。【 这里有一个不太诚实的招数（我学的），如果你有大概的印象/估计，凑
+一个偏大的数。因为牵扯到钱（商业秘密），具体数是没法核实的。而对你的简历而言
+，有实际数字绝对是很有说服力的。一点警告，别吹的过头，让人家揪着小辫子你就完
+蛋了。】试着从赞助你做那个项目的公司的管理层想一想，他们为什么愿意花这个钱？
+找到了这个原因，你也就知道该怎么写了。
+
+对还在学校/刚离开学校的人来说，好像又跑题了。我打包票：没有。学校里也是一样
+的，你老板能搞到钱，还是有原因的。什么？老板当初就是不知道怎么骗来钱的？那也
+没关系，去和老板聊聊，别太露骨的问问“如果那个项目成功了，会有什么样的应用？
+”是啊，项目还没完呢/已经给废了，可是你的工作不也推进了项目的进展吗？无论多
+么难看的工作，闪光点总是有的，就看你能不能发掘出来了。我见过的最牛的，是实验
+做了三年，试验了n种方法，没有一种成功。结果老哥（老美）写的是”
+comprehensively evaluated existing experimental techniques on … and 
+demonstrated the necessity for developing technology in new directions”, 还
+被认为是”very impressive work”，拿到了工作。
+
+另外一个问题：对学生而言，列什么项目？很简单，所有和专业相关的，只有不是那么
+课的学期论文，都可以列，哪怕是你只给老板帮忙了一个星期。为什么不列学期论文？
+原因是为未来的面试未雨绸缪:万一被问出来是学期论文，你想问你的人郁闷不郁闷？
+（既然问你，自然是对那个项目有兴趣了）
+
+当然凡事都不是绝对的（impossible is nothing, 呵呵），如果你实在想列，也不是
+完全不能，只是要慎重，做好被穷追猛打的准备。学期论文的问题主要有两个：1.缺乏
+实际意义； 2. 为了应付工事。如果你能把这两点的回答准备好，尽管列。给你一点提
+示吧：如果论文来自于实际问题（比如，分析911世贸大楼倒掉的工程原因）或科研课
+题，要抓住这一点狠强调。如果是用来练手的题目，得好好琢磨琢磨怎么说怎么这么花
+费了远超过课程要求的精力去做的。
+
+好了，现在去总结分析你过去若干年有多牛了吧。打开你的简历草稿，往多里列，目标
+：至少填满一个纸。什么？不是说简历最好一页吗？这么多哪放得下？不用担心，现在
+是草稿， 先列出来以后再根据需要筛选。
+
+EXPERIENCE这一块是简历里最最重要的一部分，因为一个公司要了解你，差不多唯一的
+方法就是看你做过什么。这么说吧，能不能过recruiter/HR那一个基本上靠
+QUALIFICATION，而能不能过技术方面的第一关基本上靠EXPERIENCE。所以，
+EXPERIENCE 要占简历总长度的30-50%（甚至更长）。
+
+
+
+关于找工作（一 简历 【之六】） 06月 12, 2010 
+Posted by randommumble in job hunting. 
+add a comment 
+6. 下一块：PATENTS。这一块不是必须的，因为多数人都没有专利，但是如果你有的话
+，把它提到前面来。为什么？一个字，钱。别忘了，公司找你是为了赚更多的钱的。你
+有专利，至少说明了几个事实：1. 你有创造力； 2. 你的创造力有经济意义。 要知道
+，申请专利是一个费时费钱的事，如果没有潜在的经济效益，公司是不会去费那事的。
+
+有工作过的同学问了：Invention disclosure算不算？回答这个问题之前，我们先给不
+知道invention disclosure是什么东东的同学解释一下。所谓的invention disclosure
+， 通常是公司为了留下“原创”性的工作的法律依据，而要求职工提交给公司的律师
+的文件。一项发明/改进能不能申请专利，你说了不算，我说了也不算，得律师说了才
+算。所以很多公司都鼓励职工写invention disclosure，甚至把invention disclosure
+和业绩/奖金挂钩。对公司来说，invention disclosure变不成专利申请通常不会损失
+什么，可是如果漏掉了专利，可亏大发了。所以公司的政策常常是宁可错交3000，不可
+漏过一个。这种情况下，你说invention disclosure的意义大不大？
+
+7. 再下一块：AWARDS。这下许多同学高兴了：这玩意，咱哥们多的是。抱歉，多数（
+比如奖学金什么的）恐怕没什么用。但是如果你有全国性的奖，哪怕是针对每个行业的
+，一定要列出来。简单的标准，如果奖项牵扯到多个学校/公司，基本上可以算。为什
+么？因为那说明你的成绩得到了同行的认可，不是一般的牛。所以如果有同学得过，比
+如说，美国化学会的最佳论文， 千万不要谦虚。
+
+好了，容易让人郁闷的两块过去了，可以开讲每个人都得写的部分了。
+
+7a. 再下一个：CERTIFICATION, 如果你有什么相关的认证的话。
+
+
+
+
+关于找工作（一 简历 【之七】） 06月 13, 2010 
+Posted by randommumble in job hunting. 
+add a comment 
+8.  最常见（基本上每份简历里都有）也容易是最没用的部分来了：EDUCATION.
+
+差不多没干招工广告的第一条都是关于学位要求的，而且HR的人在怎么忽略 你的简历
+，总要看一看你的出身是什么。不是俺搞出身论，牛校出来的人就是要占一些便宜，这
+是没办法的事。那为什么说这一部分容易是最没用的部分？
+
+请您看看你的简历，是不是这样的？
+
+Ph.D, Web Posting, University of Nowhere, Some Town, SomeState, 2000
+
+Advisor: Professor Post A. Lot
+
+Thesie/Dissertation: On How to Create 1,000,000 Posts in an hour
+
+差不多？ 你刚刚浪费了HR的给你的宝贵的20秒里的1/3.为什么说是浪费了？因为由于
+的信息只有第一行。剩下的部分对HR的人来说就是天书，对管技术的呢？也基本上是天
+书。这又为什么？
+
+先说ADVISOR。测试：10秒钟，列举你所在一行的排前五位的大牛。有多少人能说出来
+？恐怕多数人都做不到吧。所以如果你的老板不是Albert Einstein这样的牛人+名人，
+你其实完全可以说你的老板是Professor Random Mumble， 效果是差不多的。什么？你
+的老板就是本行业的前五名的大牛？那么只有两种情况你要列出老板的名字：1. 你要
+去的公司做的东东刚好是你老板出名的领域（你还是得先搞清楚那个公司技术上把关的
+人和你老板不是对头 — 文人相轻的事不是只有中国才有）； 2. 能影响是否招你的人
+是你老板的本人/fan/学生/哥们/朋友/小舅子（这个好像也不太安全）– 如果是这种
+情况，你也不需要靠resume去通关，有更有效的方法（以后再讲）。
+
+再说论文：不客气的说，完全（100%）没有用处。ADVISOR至少还有可能因为name 
+recognition给你帮点忙，论文的题目只能浪费所有人的时间。说的难听点，你的学位
+已经拿/骗（比如我）到手了，学位论文的历史使命也就结束了。
+
+那么EDUCATION到底要写成什么样？有三个版本：
+
+版本一（适用于有若干(>5）年的老油条）：
+
+Ph.D. in Web Posting, 2005, University of Internet, Cybertown,  Cyberstate
+
+M.S. in Web Posting, 2001, University of Internet, Cybertown, Cyberstate
+
+B.S. in Goofing Around, 2000, University of Nowhere, Notown, China
+
+版本二（适用于有<5年的新鲜油条）：
+
+Ph.D. in Web Posting, 2005, University of Internet, Cybertown,  Cyberstate
+
+research was focused on developing new methods to create 1,000,000 posts in 
+a day.
+
+M.S. in Web Posting, 2001, University of Internet, Cybertown, Cyberstate
+
+thesis work/research  was focused on….
+
+B.S. in Goofing Around, 2000, University of Nowhere, Notown, China
+
+concentration: playing video games all day long
+
+版本三（适用于有若干(>5）年的老油条）：
+
+Ph.D. in Web Posting, 2005, University of Internet, Cybertown,  Cyberstate  
+               GPA= 4.0
+
+research was focused on …..
+
+responsible for maintaining the … equipment in the xxx Lab.  (put a couple 
+[1- 3] descriptions of your activities besides taking courses)
+
+M.S. in Web Posting, 2001, University of Internet, Cybertown, Cyberstate    
+               GPA= 3.9
+
+thesis work/research  was focused on….
+
+responsible for maintaining the … equipment in the xxx Lab.  (put a couple 
+[1- 3] descriptions of your activities besides taking courses — do not 
+resue what you mentioned already)
+
+B.S. in Goofing Around, 2000, University of Nowhere, City, China            
+  GPA= 0.1
+
+concentration: playing video games all day long
+
+格式注意： 1. 学位 （不包括专业）和年份是黑体； 2. 注意没有学校的zip和具体的
+地址； 3. 如果是中国的学校，不要列省/自治区； 4. GPA=xxx右对齐。
+
+有同学提了：我读博士/硕士期间做的东西就不提了？要提, 但不是这儿，应该是在
+EXPERIENCE里（你的头衔是research assistant).
+
+
+
+关于找工作（一 简历 【之八】） 06月 13, 2010 
+Posted by randommumble in job hunting. 
+1 comment so far 
+到这儿，你的简历就差不多了。如果你有论文，可以加一小节 SELECTED PUBLICATIONS
+，列1到3篇， 最好是在比较牛的杂志上的。
+
+不要有的部分：Objective(已经讲过了）, Interests/Hobbies/etc (没人关心，而且
+与你的工作基本无关。唯一的例外是如果你是跑马拉松的， 想办法把这一条塞到什么
+地方去 — 公司里的人往往有家有业，没多少时间参加体育活动，所以最流行的锻炼方
+式是跑步。如果你是跑马拉松的，说好听的是反映了你这个人有毅力，实际的情况是遇
+上被共鸣的机会比较多。）， references (所有人都是“available upon request”
+）。
+
+草稿弄好了，下一步怎么办？存文件。把你的文件名命名为 ZUQUO-SOCCER-QU-SR-
+NUCLEAR-ENGR-ALQAEDA.DOC.  即， 你的名字-工作位置-公司名字。其中，公司名（Al
+Qaeda)是给你看的，剩下的是给HR准备的 — 设想一下，HR的计算机某个文件夹里有
+20个my resume.doc, 头大不大？他/她的头大了，拿谁出气？
+
+然后，开始读。一个词一个词的读，坚决断绝拼写错，语法错，单复数错，时态错之类
+的小问题。自己读（每天吃饭前读一遍），发到所以能发动的人读（老婆/老公/女朋友
+/男朋友, 同学，朋友），最好能找到native speaker帮你读（可以贿赂顿饭什么的）
+，但是不建议找不认识的人（因为不太会用心）。
+
+然后，就是改。刚开始时改得面目全非是很正常的。总要有三五七八个（不是三千五百
+七十八）版本才会基本定型。然后就可以广而告之了。如何广而告之后面再讲。
+
+
+
+关于找工作（一 简历 【之九】） 06月 15, 2010 
+Posted by randommumble in job hunting. 
+1 comment so far 
+讲了这么多写resume的细节，有没有体会出最根本的指导思想是什么？
+
+其实说出来很简单 — 当然对新毕业/还在校的同学来说，这有点难 –要给公司一个雇
+你的理由。算一算经济账吧，公司雇一个人(professional)的开支大概是所付工资的1.
+5倍（老美劳动统计局的数据，http://www.bls.gov/news.release/ecec.t01.htm），如果你不能给公司赚回这么多钱，公司为什么要雇你？所以当你读你的resume的时候，这个问题要时时响在你的耳边：我过去的经历能不能说服他们我有足够的能力给公司带来好处？记住这儿的关键词是“过去的经历”– 公司不是NBA, 靠potential是找不到工作的。
+
+这一点搞清楚，写cv也就不是很难了。想一想，看cv的人需要什么样的人？ 当然是能
+做科研的。所以和科研相关的东西就需要突出了（你如果要找工业界的工作，强调科研
+很容易把别人吓着）。具体表现在哪儿呢？（我所接触的科研类的工作，基本上都要求
+有博士学位，所以我的看法就限于那个范围了）
+
+1.  博士论文做的是什么？老板是谁？这个有点不合理，但是没办法：如果你的老板牛
+/人气广，你的机会要好得多。
+
+2. 发了什么论文？什么样的杂志？被引用多少次？
+
+这两条决定了你的cv和resume要有本质的不同：resume里education和publication是尽
+量精简，而cv里这两块要详细。
+
+那么如果你的“出身”不是很好怎么办？很遗憾，这个世界不公平，不过你的机会也不
+是没有。因为多数情况下，博士之后的科研与博士论文不是完全一样的。所以出身固然
+重要，更重要的是你所受的做科研的训练。怎么在CV中体现出你受了良好的训练？一个
+重要的部分是experience。 这儿，和resume 又不一样了：resume要强调解决实际问题
+，强调结果； cv要强调的是怎么做的，具体说就是你琢磨出了什么新鲜独门的招数。
+说到招数，给个开武馆的类别吧：工业界要找到相对于武馆的工作人员，打群架是要好
+用；科研圈子要找到是武馆的正式弟子，基本套路要熟，最有吸引力的还是有开创新局
+面能力的好苗子。（日月神教这样的不算数）
+
+具体的细节就不讲了（我也讲不好 –经历有限）。
+
+一个小建议：如果你还和你的老板/导师有联系，建议你找机会（一起喝个咖啡什么的
+）和老板好好谈一谈，一个重要的方面是让老板不客气地评价一下你的学术水平，毕竟
+你老板见过的世面比你多多了。知道了自己的弱项，现补可能来不及了，但是你在面谈
+的时候可以有意识的避开那些方面–能读出Ph.D.的，学术上都是有两把刷子的，可别
+哪壶不开提哪壶。
+
+最后明确一下工业界/科研圈子的分类（好象应该在最前面）：通常说起来，学校（如
+果你去做教授/postdoc/research scientist), 国家实验室基本上都是科研圈子，工业
+界大多数是工业界（废话）/非学术圈子。有几个注意的：
+
+1. 大公司的研发不一定是科研圈子（因公司而异），甚至有的公司的研发的不同部门
+定位都不一样。这个没有一刀切的标准，只有你自己想办法去打听了（有一个不一定管
+用的方法：看他们的论文多少。说不一定管用是因为很多公司【有可能是大多数】是基
+本不允许发文章的 –牵涉到公司的商业机密）。
+
+2.好象药厂的研发部门普遍都是要有postdoc经历的。我道听途说，不负法律责任啊。
+
+3.有些公司（比如consulting公司）看起来不起眼，research其实是很牛的。如果你申
+请他们的工作，做好被问的稀里哗啦的准备（因为那儿的人虽然未必是牛人，但在他/
+她所做的一块去很有可能是非常的牛，基本上对没在那个题目上下过大工夫/有过相当
+的经验的人是见一个灭一个）。
+
+罗里八嗦写了这么长，希望能对你准备简历有一点帮助。基于我的经验，你去
+outplacement/career placement公司培训，或者找专业写手，他们能给你的也就这么
+多了。所以如果你原来有这方面的预算，我有一个小小的建议：把预算的90%留给你自
+己，剩下的10%拿去帮助需要帮助的人。如果你现在是处于骑驴找马的阶段，建议把比
+例变成75%/25%. 如果你想不出去帮助谁，我还有两个建议：1. 海外中国教育基金会(
+Overseas China Education Foundation)， http://www.ocef.org; 2.帮助陈伟宁的遗孀和小女儿（http://chenweining.org）。声明：我不是清华/北大的，也不认识她们。
+
+
+
+关于找工作（二 Cover Letter） 06月 16, 2010 
+Posted by randommumble in job hunting. 
+8 comments 
+准备好了简历，下一个文档就是cover letter了。其实对衡量你是否是一个好的候选人
+来说，cover letter的作用几乎是零（很多情况下主管技术工作的人或者雇人经理根本
+见不到cover letter)。那么为什么还要准备cover letter呢？答案和简历的
+qualification那一段差不多 — 主要目的是帮助你顺利度过/混过recruiter/HR这一关。
+
+写cover letter也是有固定的套路的，而且这个套路更简单（一两个字）。不过俺已经
+吊了大家这么长时间的胃口了，就再多吊一会儿吧。
+
+先说说recruiter/HR是怎么衡量一个候选人的。简历里的qualification毋庸置疑是非
+常非常重要的，但是qualification其实还不是他们/她们的“第一印象”。第一印象是
+什么？就是cover letter了。这么说吧， 找工作就和（通过介绍人）找对象差不多，
+小伙/姑娘再好，介绍人那儿没有好印象，要再进一步也不容易吧？那么怎么留下一个
+好印象呢？差不多唯一的办法就是想办法减轻介绍人的工作负担了。所以俺的罗嗦一下
+recruiter/HR是怎么衡量一个申请人会不会的。
+
+有一点基本可以确定，recruiter/HR对你的专业所知非常有限。可是他们/她们 也要工
+作不是？怎么办呢？很简单，把招工广告拿过来，把简历拿来，对照招人的要求一二三
+四五六七， 一条条的比较，符合一条打一个勾，最后数有多少个勾–勾越多的越好。
+有同学说了，你不是说他们只花20秒吗？哪有时间来一条条地过？没错，他们是没时间
+。大多数人根本过不了前20秒这一关，所以也不会被打勾了。那么为什么要在讲cover 
+letter的时候提这个呢？还是一个原因：减轻recruiter/HR的工作负担。试想如果你已
+经替他/她老人家做了这项工作了，他/她对你的印象也会好很多不是。再说了，有些要
+求你马马虎虎可以算达到，也可以算没达到，你先入为主地说达到了，也多少占一些便
+宜吧。
+
+好了，进入正题：cover letter 怎么写？正式书信的格式不用我提了吧（如果不清楚
+，去随便那个图书馆找本书信格式的书看看）。cover letter的主体有一个模式（就是
+我说的一两个字的样板）：Q-letter。现在你知道了，网上随便google吧。我给一个我
+用的版本：
+
+第一段：I am writing in response to your recent advertisement for a Nuclear 
+Scientist (用招工广告里的title) (position opening # 12345) on your website/
+monster.com/careerbuilder.com/wherever(选一个，或者类似的）. Based on my 
+experience/background(选一个，或者排列组合，不要用“/”）, I believe I am a 
+good/strong candidate for the position.
+
+简单不简单？别的什么话都不需要说，没用。
+
+第二段：查入一个三列，4-6行的表格。左面一列（第一列）， 题头(11号字，全大写
+， 或者变黑体）YOUR NEEDS; 右边一列（第三列）， 题头MY QUALIFICATION. 第二列
+空着，不用。
+
+下一行开始，左面一列，抄招工广告里的具体要求，基本上是copy&paste；右边一列，
+对应的你的资历。
+
+这么 列上3-5条就可以了，再多了recruiter/HR也没空看。
+
+然后，把表格的线/框全去掉，修改字体（表格里的字体常常和文本里的不一样），对
+齐，表格的宽度（总宽度比正文的宽度稍小，第二列用来调节左面和右面的距离）/高
+度，让这个表格看不大出来是一个表格。
+
+第三段：Thank you for your considerations. If you would like to discuss 
+further about my qualifications, please do not hesitate to contact me via 
+email at (把简历里的email地址抄过来） or via telephone at 123-1234-567 (知道
+为什么前面建议搞一个prepaid的手机专物专用了吧？）。I look forward to talking
+with you.
+
+然后， Sincerely, 空三四行（签名用），敲上你的名字（和简历里的要一致）。
+
+有了这个样板，申请每个位置时把列表里的内容改一改就差不多了。（简历也要相应的
+改一下）
+
+下一步，把cover letter和简历合成一个文件（不是压缩成一个文件啊），即第一页是
+cover letter， 第二（三）页是简历。用简历的文件名（参见前面讲过的文件命名方
+案）。
+
+都弄好了，就可以email给recruiter了。Email很简单：
+
+Dear Mr/Ms xxx,
+
+I am writing … (把cover letter的第一句话抄上）. Attached  please find the 
+cover letter and my resume.
+
+Thank you.
+
+Job Hunter
+
+下一步，就是等鱼上钩了。
+
+学习班里教的：cover letter里最后一句和recruiter约一个时间电话联系 I look 
+forward to talking with you over the phone this coming Friday (大概两三天后
+吧）between 10 and 11 AM. 我个人不喜欢这样做，一是觉得有些唐突（如果
+recruiter刚好那时候忙，你这不是添乱吗？）， 再者感觉没必要，反正他/她给你的
+时间就是20秒，你或者过关，或者不过关，有什么好废话的。如果你过关了，他/她自
+然会和你联系；如果你不过关，再去罗里八嗦，第一未必会改变他/她的想法，第二搞
+不好你就此被打入冷宫（recruiter一定会再有类似的工作机会的），那可亏大发了。
+
+
+
+关于找工作（一/二 简历/cover letter的补充说明） 06月 21, 2010 
+Posted by randommumble in job hunting. 
+1 comment so far 
+前面详详细细地解释了简历和cover letter怎么写会对HR/recruiter的喜好，据说应该
+是有效的（俺去的那个outplacement 公司大大小小有百十号人，如果教的东东不管用
+，要维持下去大概也不容易吧？）。当然不管用的时候也是有的，比如公司根本不用
+recruiter。（俺做hiring manager的时候公司里的HR只负责把简历输入到数据库里，
+俺得一个一个看。虽然不至于每个只用20秒，但一个小时看个四五十是没有问题的。）
+那种情况下能不能过关主要靠申请人的实际经验了。可是（1）作为申请人你是无法预
+知你会遇到这种情况的； （2）即使是hiring manager直接看，读起来容易些也不会有
+副作用，所以我的建议是尽量照着模板来。也许刚开始把自己的简历改成模板的样子比
+较费劲，但俺的经验是后面的修改就轻松多了。
+
+当然俺的经验毕竟有限，所以如果您有不同的意见，欢迎评论/分享。
+
+
+
+关于找工作（四 面试） 06月 21, 2010 
+Posted by randommumble in job hunting. 
+7 comments 
+好了，现在有公司的人给你打电话/发email约谈了。恭喜你，你基本上已经度过了做没
+谱/不着调/撞大运的一关了。接下来是什么程序呢？
+
+一般说来，公司的面试会是两步：1.电话面试 （telephone interview)； 2. 面对面
+面试（on-site interview).
+
+先说电话面试：电话面试有可能是两个电话。第一个，和recruiter/HR谈。找一个基本
+上没什么担心的，因为recruiter/HR对你的技术能力的判断力几乎是零。他们打电话的
+目的一般是想搞清楚一些非技术的问题， 比如你的身份问题，是否需要搬家，什么时
+候available， 等等。对这些问题就实话实说好了，因为很多事情（比如身份问题）不
+是个人/公司能控制了的。相对来说，recruiter给你打电话要好办一些，因为他们通常
+会尽量帮助你（别忘了，他们的收入是和帮助公司招到人挂钩的， 有的甚至是直接挂
+钩[招到一个人，拿一个人的钱])。
+
+一个很普遍的，让很多人不舒服的问题是recruiter有时会问你对工资的期望值是多少
+。我的经验是如果你有大概的概念，不妨直言（反正俺都是明着说的）。提醒一下，如
+果你是骑驴找马，而现在的工作有奖金，记得把奖金包括进去。recruiter问这个问题
+的原因很简单：如果你的期望值是10万，而那个位置最多给7万，那就不要浪费大家的
+时间了。
+
+同时，你可以问recruiter这些问题：1. 那个位置的pay band 是多少？ （如果
+recruiter问你的期望值是多少，而你基本上没概念的话，可以用这个问题来反问
+recruiter — 当然得委婉一点，比如：I’m quite flexible on the level of pay, 
+may I ask you what the pay band for that position is?) 2. 如果recruiter提起
+和hiring manager 的电话面试，可以问他/她 hiring manager的背景以及面试需要注
+意哪些方面。正常情况下，recruiter会尽量帮助你的。
+
+下一步，就是技术方面的面试了。你能不能拿到工作，这一步是至关重要的。遗憾的是
+，这一步也是最没法准备的。为什么？很简单，前面过HR/recruite关，HR/recruiter
+的训练都是大同小异的，所以可以对症下药；而技术方面，隔行如隔山，而且参与面试
+的人有各种各样的风格（多数公司都没有固定的面试问题），能不能说服他们你是合适
+的人选，只有靠你自己的能耐了。
+
+那么是不是说只有去碰运气了？也不完全是。面试之前，至少有一项准备工作：调查一
+下公司的背景以及面试你的人的背景（如果可能的话）。公司的背景包括主要的业务（
+总不能人家问你“对我们公司知道什么？”回答“nothing‘吧），最近的新闻（一般
+公司的主页上会有，另外google)， 主要的竞争对手等等。面试你的人的背景有什么用
+？通常情况下，他们未必都是你的同行（比如有的人是工程师，有的人是学物理的，有
+的人是做marketing的），知道了会和什么样的人面谈，才好有的放矢的准备啊。面谈
+的时候，也可以有选择地吹吹牛。
+
+面试的程序有什么呢？基本上是两块：1. presentation and/or hands-on project. 2
+. 和不同的人面谈。hands-on project好象在找软件工程师的工作是特别普遍。俺不是
+学软件的，所以也没什么经验。建议去网上（比如mitbbs)找”面经“。 presentation
+对工作经验不多的申请人来说几乎是必须的（对多年工作经验的人来说，做
+presentation有时不现实， 因为大多数公司里做的东西是不能随便出去讲的）。面试
+时的presentation其实和学校里的差不多，（ 当然每个人在学校里受的训练也不一样
+），但是要注意淡化技术细节，把重点放在解释清楚到底是怎么做的。原因很简单，在
+学校里做presentation， 听众基本上都是同行，所以你可以不厌其烦地讲解细节，把
+别人都灌晕了才牛；而在公司里，第一同行未必占多数，再者基本上没人喜欢看公式，
+特别是说话管用的经理们。如果你不能用大白话把你的东西讲清楚，你觉得经理们会不
+会帮你说话？
+
+至于和不同的人面谈，俺能给的经验就两条：1. 要尽量给人留下一个容易相处的印象
+。为什么？因为以后大家要做同事的。虽然未必会做同一个项目，但谁也不能断定以后
+绝对不会合作。如果有一个P股上的痛（hehe, 老美的说法，pain in the *ss), 不是
+给自己找麻烦吗？2. 吹牛不要紧，不要漏。特别是和技术背景强的人聊天，他/她问某
+个问题，通常是有一定概念的。如果你乱吹，牛皮吹破了，你的面试成绩也就差不多了
+。其实有时候老老实实说”我所知有限“也不一定是坏事，因为有时候面试的人是故意
+来看你到底懂多少的。
+
+几个与面试相关的非技术经验：
+
+1. 面试前一天，最好开车去面试地点一趟。熟悉一下路程，以防万一第二天路上耽搁
+（比如有时候公司的门面很小，或者gps不准确）。
+
+2. 面试时西装革履（除非公司明确告诉你不需要）。建议开车时把西装挂起来，到了
+公司再穿上。进了房间后，可以把西装脱下来。
+
+3. 比约定的面试时间提前大概10分钟到。如果到早了，在公司的停车场等一会儿；如
+果迟到（最好不要），提前打电话给hiring manager告诉大概会迟到几分钟。
+
+4. 面谈后记得要名片。在面试后的24小时内给每个人发一封感谢的email。内容可以基
+本一样，但是要每人一封（不要群发）。多数情况下，对方不会回你的email，那是正
+常的，没有什么可紧张的。
+
+5.最重要的一点，放松。要相信自己的实力。
+
+
+
+--
+
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 76.]
